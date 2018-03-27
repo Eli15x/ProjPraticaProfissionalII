@@ -103,6 +103,7 @@
             this.btnCadastro.TabIndex = 5;
             this.btnCadastro.Text = "Cadastro";
             this.btnCadastro.UseVisualStyleBackColor = false;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // frmLogin
             // 

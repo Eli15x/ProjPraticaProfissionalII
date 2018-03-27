@@ -53,7 +53,7 @@
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::ProjetoMarcia.Properties.Resources.game3;
-            this.ClientSize = new System.Drawing.Size(1264, 770);
+            this.ClientSize = new System.Drawing.Size(914, 512);
             this.Controls.Add(this.btnPlay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

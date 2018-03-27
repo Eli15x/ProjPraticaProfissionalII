@@ -24,6 +24,11 @@ namespace ProjetoMarcia
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
             frmJogo frmJogo = new frmJogo();
             frmJogo.Show();
             this.Hide();
