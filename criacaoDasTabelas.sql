@@ -36,4 +36,7 @@ constraint fkCodPErgunta foreign key(codPergunta) References Pergunta(codPergunt
 ) 
 
 
-
+insert into Time values('Vermelho')
+insert into Time values('Verde')
+insert into Time values('Azul')
+select * from time
