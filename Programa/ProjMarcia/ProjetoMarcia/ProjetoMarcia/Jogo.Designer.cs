@@ -43,9 +43,9 @@
             // 
             // tmrInstrucoes
             // 
-            this.tmrInstrucoes.Enabled = true;
-            this.tmrInstrucoes.Interval = 10;
-            this.tmrInstrucoes.Tick += new System.EventHandler(this.tmrInstrucoes_Tick);
+            //this.tmrInstrucoes.Enabled = true;
+           // this.tmrInstrucoes.Interval = 10;
+           // this.tmrInstrucoes.Tick += new System.EventHandler(this.tmrInstrucoes_Tick);
             // 
             // button2
             // 

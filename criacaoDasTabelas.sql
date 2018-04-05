@@ -35,8 +35,19 @@ codPergunta int not null,
 constraint fkCodPErgunta foreign key(codPergunta) References Pergunta(codPergunta)
 ) 
 
-
+----------------------------
+--testes--------------------
 insert into Time values('Vermelho')
 insert into Time values('Verde')
 insert into Time values('Azul')
 select * from time
+
+
+insert into Usuario values('1', '1', 100,1)
+
+select * from Usuario
+
+
+declare @ret bit
+exec @ret = VerificaUsuario @senha = '1234', @NomeUsuario= Teste
+ select @ret
