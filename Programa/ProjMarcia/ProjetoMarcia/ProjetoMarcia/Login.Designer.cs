@@ -43,7 +43,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Location = new System.Drawing.Point(138, 116);
+            this.label1.Location = new System.Drawing.Point(127, 116);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 59);
             this.label1.TabIndex = 0;
@@ -64,7 +64,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(359, 130);
+            this.txtUsuario.Location = new System.Drawing.Point(359, 131);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(291, 44);
             this.txtUsuario.TabIndex = 2;

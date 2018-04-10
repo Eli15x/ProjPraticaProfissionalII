@@ -69,3 +69,16 @@ Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\Pr
 Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe.config
 Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe
 Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.pdb
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe.config
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.pdb
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csprojResolveAssemblyReference.cache
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmCadastro.resources
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.FrmInicio.resources
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmJogo.resources
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmLogin.resources
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.Properties.Resources.resources
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.GenerateResource.Cache
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.CoreCompileInputs.cache
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.exe
+Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.pdb
