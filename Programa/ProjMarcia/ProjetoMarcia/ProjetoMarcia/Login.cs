@@ -51,8 +51,8 @@ namespace ProjetoMarcia
                     "select @ret"; //"exec @ret = VerificaUsuario @senha=@sen,@nomeUsuario=@usu";
 
                     SqlCommand cmd = new SqlCommand(cmd_s, con);
-                   cmd.Parameters.AddWithValue("@sen", txtUsuario.Text);
-                   cmd.Parameters.AddWithValue("@usu", txtSenha.Text);
+                   cmd.Parameters.AddWithValue("@sen", txtSenha.Text);
+                   cmd.Parameters.AddWithValue("@usu", txtUsuario.Text);
 
                     con.Open();
 
