@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProjetoMarcia
 {
     public partial class frmCadastro : Form
     {
+        string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
+
         public frmCadastro()
         {
             InitializeComponent();
@@ -28,6 +31,8 @@ namespace ProjetoMarcia
 
             if ((txtUsuCad.Text == "") || (txtSenCad.Text == "")||(cmbTimeCad.Text == ""))
                 MessageBox.Show("Preencher todos os campos");
+            if ((cmbTimeCad.Text == "VErmelho") || (cmbTimeCad.Text=="Azul"))
+                MessageBox.Show("Cor de time inválida");
 
             else
             {
@@ -43,16 +48,23 @@ namespace ProjetoMarcia
 
 
                     // cria comando de consulta ao SQL 
-                    string cmd_s = "declare @ret bit;" +
-                    "" +
-                    "select @ret"; //"exec @ret = VerificaUsuario @senha=@sen,@nomeUsuario=@usu";
+                    string cmd_s = "Insert into Usuario values(@usu, @sen,0,@time)";
 
                     SqlCommand cmd = new SqlCommand(cmd_s, con);
-                    cmd.Parameters.AddWithValue("@sen", txtSenha.Text);
-                    cmd.Parameters.AddWithValue("@usu", txtUsuario.Text);
+                    cmd.Parameters.AddWithValue("@usu", txtUsuCad.Text);
+                    cmd.Parameters.AddWithValue("@sen", txtSenCad.Text);
+                    if (cmbTimeCad.Text == "Azul")
+                        cmd.Parameters.AddWithValue("@time", 4);
+                    else
+                        cmd.Parameters.AddWithValue("@time", 1);
 
-              
-                    
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+
+                    con.Close();
+
 
 
 
@@ -65,9 +77,10 @@ namespace ProjetoMarcia
                     MessageBox.Show(str, "Database Exception");
                 }
             }
-
+            
         }
 
 
     }
 }
+                                                                                               
