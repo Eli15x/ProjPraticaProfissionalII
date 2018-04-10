@@ -41,12 +41,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // tmrInstrucoes
-            // 
-            //this.tmrInstrucoes.Enabled = true;
-           // this.tmrInstrucoes.Interval = 10;
-           // this.tmrInstrucoes.Tick += new System.EventHandler(this.tmrInstrucoes_Tick);
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(1426, 239);

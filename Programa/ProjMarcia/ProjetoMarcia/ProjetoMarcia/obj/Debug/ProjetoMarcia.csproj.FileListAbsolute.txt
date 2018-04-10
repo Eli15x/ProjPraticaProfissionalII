@@ -56,3 +56,16 @@ Z:\3Semestre\Pratica\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia
 Z:\3Semestre\Pratica\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe.config
 Z:\3Semestre\Pratica\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe
 Z:\3Semestre\Pratica\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.pdb
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csprojResolveAssemblyReference.cache
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmCadastro.resources
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.FrmInicio.resources
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmJogo.resources
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmLogin.resources
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.Properties.Resources.resources
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.GenerateResource.Cache
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.CoreCompileInputs.cache
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.exe
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.pdb
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe.config
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe
+Z:\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.pdb

@@ -87,9 +87,9 @@ namespace ProjetoMarcia
 
         private void btnCadastro_Click(object sender, EventArgs e)
         {
-            frmJogo frmJogo = new frmJogo();
-            frmJogo.Show();
-            this.Hide();
+            frmCadastro frmCadastro = new frmCadastro();
+            frmCadastro.Show();
+            this.Hide(); 
         }
     }
 }
