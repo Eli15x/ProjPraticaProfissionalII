@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUsuCad = new System.Windows.Forms.TextBox();
+            this.txtSenCad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTimeCad = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnCadastrar
@@ -51,21 +51,21 @@
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // textBox1
+            // txtUsuCad
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.textBox1.Location = new System.Drawing.Point(490, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(278, 44);
-            this.textBox1.TabIndex = 7;
+            this.txtUsuCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.txtUsuCad.Location = new System.Drawing.Point(490, 101);
+            this.txtUsuCad.Name = "txtUsuCad";
+            this.txtUsuCad.Size = new System.Drawing.Size(278, 44);
+            this.txtUsuCad.TabIndex = 7;
             // 
-            // textBox2
+            // txtSenCad
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.textBox2.Location = new System.Drawing.Point(490, 206);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(278, 44);
-            this.textBox2.TabIndex = 8;
+            this.txtSenCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.txtSenCad.Location = new System.Drawing.Point(490, 206);
+            this.txtSenCad.Name = "txtSenCad";
+            this.txtSenCad.Size = new System.Drawing.Size(278, 44);
+            this.txtSenCad.TabIndex = 8;
             // 
             // label1
             // 
@@ -103,18 +103,18 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Escolha de time";
             // 
-            // comboBox1
+            // cmbTimeCad
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbTimeCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.cmbTimeCad.FormattingEnabled = true;
+            this.cmbTimeCad.Items.AddRange(new object[] {
             "Vermelho",
             "Azul",
             "Verde"});
-            this.comboBox1.Location = new System.Drawing.Point(490, 305);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(278, 45);
-            this.comboBox1.TabIndex = 12;
+            this.cmbTimeCad.Location = new System.Drawing.Point(490, 305);
+            this.cmbTimeCad.Name = "cmbTimeCad";
+            this.cmbTimeCad.Size = new System.Drawing.Size(278, 45);
+            this.cmbTimeCad.TabIndex = 12;
             // 
             // frmCadastro
             // 
@@ -123,12 +123,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ProjetoMarcia.Properties.Resources.fundoObscuro;
             this.ClientSize = new System.Drawing.Size(914, 548);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbTimeCad);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSenCad);
+            this.Controls.Add(this.txtUsuCad);
             this.Controls.Add(this.btnCadastrar);
             this.Name = "frmCadastro";
             this.Text = "Cadastro";
@@ -139,11 +139,11 @@
 
         #endregion
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsuCad;
+        private System.Windows.Forms.TextBox txtSenCad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTimeCad;
     }
 }

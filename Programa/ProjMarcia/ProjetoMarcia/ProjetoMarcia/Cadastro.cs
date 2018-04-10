@@ -23,8 +23,51 @@ namespace ProjetoMarcia
             frmLogin login = new frmLogin();
             login.Show();
             this.Hide();
+
+
+
+            if ((txtUsuCad.Text == "") || (txtSenCad.Text == "")||(cmbTimeCad.Text == ""))
+                MessageBox.Show("Preencher todos os campos");
+
+            else
+            {
+                try
+                {
+
+                    // cria conexao ao banco de dados
+                    SqlConnection con = new SqlConnection();
+                    cs = cs.Substring(cs.IndexOf("Data Source"));
+                    con.ConnectionString = cs;
+
+
+
+
+                    // cria comando de consulta ao SQL 
+                    string cmd_s = "declare @ret bit;" +
+                    "" +
+                    "select @ret"; //"exec @ret = VerificaUsuario @senha=@sen,@nomeUsuario=@usu";
+
+                    SqlCommand cmd = new SqlCommand(cmd_s, con);
+                    cmd.Parameters.AddWithValue("@sen", txtSenha.Text);
+                    cmd.Parameters.AddWithValue("@usu", txtUsuario.Text);
+
+              
+                    
+
+
+
+                }
+                catch (System.Data.SqlClient.SqlException ex)
+                {
+                    string str;
+                    str = "Source:" + ex.Source;
+                    str += "\n" + "Message:" + ex.Message;
+                    MessageBox.Show(str, "Database Exception");
+                }
+            }
+
         }
 
-     
+
     }
 }
