@@ -82,6 +82,7 @@ Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\Projeto
 Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.CoreCompileInputs.cache
 Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.exe
 Z:\3Semestre\Pratica certa\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.pdb
+<<<<<<< HEAD
 C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe.config
 C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe
 C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.pdb
@@ -95,3 +96,5 @@ C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMa
 C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.CoreCompileInputs.cache
 C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.exe
 C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.pdb
+=======
+>>>>>>> a2ecaf69c4592e99d6271fca6bb143ad8a67dfe1
