@@ -27,6 +27,11 @@ namespace ProjetoMarcia
            // AtivaBotoes();
         }
 
+        private void tmrInstrucoes_Tick(object sender, EventArgs e)
+        {
+
+        }
+
         /* private void tmrInstrucoes_Tick(object sender, EventArgs e)
          {
 

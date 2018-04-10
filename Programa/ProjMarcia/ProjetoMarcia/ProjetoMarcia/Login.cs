@@ -81,6 +81,10 @@ namespace ProjetoMarcia
                     str += "\n" + "Message:" + ex.Message;
                     MessageBox.Show(str, "Database Exception");
                 }
+
+                frmJogo Jogo = new frmJogo();
+                Jogo.Show();
+                this.Hide();
             }
 
         }

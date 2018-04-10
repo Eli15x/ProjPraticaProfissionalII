@@ -38,9 +38,9 @@
             this.btnPlay.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnPlay.Font = new System.Drawing.Font("Swis721 BlkEx BT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlay.ForeColor = System.Drawing.Color.White;
-            this.btnPlay.Location = new System.Drawing.Point(442, 484);
+            this.btnPlay.Location = new System.Drawing.Point(326, 367);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(369, 143);
+            this.btnPlay.Size = new System.Drawing.Size(270, 104);
             this.btnPlay.TabIndex = 0;
             this.btnPlay.Text = "JOGAR";
             this.btnPlay.UseVisualStyleBackColor = false;
@@ -52,7 +52,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::ProjetoMarcia.Properties.Resources.game3;
+            this.BackgroundImage = global::ProjetoMarcia.Properties.Resources.gameProporcoesOkay;
             this.ClientSize = new System.Drawing.Size(914, 512);
             this.Controls.Add(this.btnPlay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -60,7 +60,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Jogar";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
