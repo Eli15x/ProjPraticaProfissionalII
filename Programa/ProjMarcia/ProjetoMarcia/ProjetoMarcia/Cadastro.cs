@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProjetoMarcia
 {
     public partial class frmCadastro : Form
     {
+
+        string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
+
         public frmCadastro()
         {
             InitializeComponent();
@@ -43,18 +47,24 @@ namespace ProjetoMarcia
 
 
                     // cria comando de consulta ao SQL 
-                    string cmd_s = "declare @ret bit;" +
-                    "" +
-                    "select @ret"; //"exec @ret = VerificaUsuario @senha=@sen,@nomeUsuario=@usu";
+                    string cmd_s = "insert into Usuario values(@usu,@sen,0,@time)";
 
                     SqlCommand cmd = new SqlCommand(cmd_s, con);
-                    cmd.Parameters.AddWithValue("@sen", txtSenha.Text);
-                    cmd.Parameters.AddWithValue("@usu", txtUsuario.Text);
+                    cmd.Parameters.AddWithValue("@usu", txtUsuCad.Text);
+                    cmd.Parameters.AddWithValue("@sen", txtSenCad.Text);
+                    if(cmbTimeCad.Text=="Azul")
+                        cmd.Parameters.AddWithValue("@time", 4);
+                    else
+                        if(cmbTimeCad.Text == "Vermelho")
+                            cmd.Parameters.AddWithValue("@time", 1);
+                        else
+                            MessageBox.Show("Valor Invalido para time");
 
-              
-                    
+                    con.Open();
 
+                    cmd.ExecuteNonQuery();
 
+                    con.Close();
 
                 }
                 catch (System.Data.SqlClient.SqlException ex)

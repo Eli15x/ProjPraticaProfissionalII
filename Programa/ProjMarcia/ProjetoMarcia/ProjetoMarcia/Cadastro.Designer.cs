@@ -109,8 +109,7 @@
             this.cmbTimeCad.FormattingEnabled = true;
             this.cmbTimeCad.Items.AddRange(new object[] {
             "Vermelho",
-            "Azul",
-            "Verde"});
+            "Azul"});
             this.cmbTimeCad.Location = new System.Drawing.Point(490, 305);
             this.cmbTimeCad.Name = "cmbTimeCad";
             this.cmbTimeCad.Size = new System.Drawing.Size(278, 45);
