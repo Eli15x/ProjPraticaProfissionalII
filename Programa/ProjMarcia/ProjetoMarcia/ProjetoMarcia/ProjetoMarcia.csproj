@@ -67,6 +67,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFase1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFase1.Designer.cs">
+      <DependentUpon>frmFase1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jogo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFase1.resx">
+      <DependentUpon>frmFase1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Jogo.resx">
       <DependentUpon>Jogo.cs</DependentUpon>
@@ -158,6 +167,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gameProporcoesOkay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fase1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fase1V.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fase1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoObscuro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vilao1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vilao1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vilao2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vilao11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vilao12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vilao13.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
