@@ -45,7 +45,7 @@ insert into Resposta values ('70000m',0,1)
 insert into Resposta values ('7700m' ,0,1)
 
 
-insert into Pergunta values('Calcule: 304 x 2',1,1)
+insert into Pergunta values('Calcule: 304 * 2',1,1)
 
 insert into Resposta values ('616',0,1)
 insert into Resposta values ('604',0,1)
@@ -53,7 +53,7 @@ insert into Resposta values ('612',0,1)
 insert into Resposta values ('608',1,1)
 
 
-insert into Pergunta values('Calcule: 37 x 10',1,1)
+insert into Pergunta values('Calcule: 37 * 10',1,1)
 
 insert into Resposta values ('370',1,1)
 insert into Resposta values ('360',0,1)
@@ -62,7 +62,7 @@ insert into Resposta values ('390',0,1)
 
 
 
-insert into Pergunta values('Calcule: 9 x 2',1,1)
+insert into Pergunta values('Calcule: 9 * 2',1,1)
 
 insert into Resposta values ('28',0,1)
 insert into Resposta values ('17',0,1)
@@ -70,7 +70,7 @@ insert into Resposta values ('18',1,1)
 insert into Resposta values ('21',0,1)
 
 
-insert into Pergunta values('Calcule: 7 x 3',1,1)
+insert into Pergunta values('Calcule: 7 * 3',1,1)
 
 insert into Resposta values ('21',1,1)
 insert into Resposta values ('18',0,1)
@@ -100,6 +100,14 @@ insert into Resposta values ('5',0,1)
 insert into Resposta values ('3',0,1)
 insert into Resposta values ('6',0,1)
 
+insert into Pergunta values('Calcule: 36/9',1,1)
+
+insert into Resposta values ('4',1,1)
+insert into Resposta values ('5',0,1)
+insert into Resposta values ('3',0,1)
+insert into Resposta values ('6',0,1)
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -114,30 +122,86 @@ insert into Resposta values ('8/5',0,1)
 
 insert into Pergunta values('Simplifique: 16/10',2,1)
 
-insert into Resposta values ('7/4',1,1)
+insert into Resposta values ('7/4',0,1)
 insert into Resposta values ('4/3',0,1)
 insert into Resposta values ('8/3',0,1)
 insert into Resposta values ('8/5',1,1)
 
 
-insert into Pergunta values('Simplifique: 21/6',2,1)
+insert into Pergunta values('Simplifique: 18/12',2,1)
 
-insert into Resposta values ('7/2',1,1)
-insert into Resposta values ('8/3',0,1)
-insert into Resposta values ('7/3',0,1)
-insert into Resposta values ('8/5',0,1)
+insert into Resposta values ('3/2',1,1)
+insert into Resposta values ('4/3',0,1)
+insert into Resposta values ('5/3',0,1)
+insert into Resposta values ('2/3',0,1)
+
+insert into Pergunta values('Simplifique: 20/15',2,1)
+
+insert into Resposta values ('5/2',0,1)
+insert into Resposta values ('4/3',1,1)
+insert into Resposta values ('5/3',0,1)
+insert into Resposta values ('2/3',0,1)
+
+
+insert into Pergunta values('Calcule: 99/2',2,1)
+
+insert into Resposta values ('44.5',0,1)
+insert into Resposta values ('49.5',1,1)
+insert into Resposta values ('48.5',0,1)
+insert into Resposta values ('43.5',0,1)
+
+
+insert into Pergunta values('Calcule: 13/5',2,1)
+
+insert into Resposta values ('2.5',0,1)
+insert into Resposta values ('2.8',0,1)
+insert into Resposta values ('2.6',1,1)
+insert into Resposta values ('2.7',0,1)
+
+
+insert into Pergunta values('Calcule: 30/5',2,1)
+
+insert into Resposta values ('6',1,1)
+insert into Resposta values ('8',0,1)
+insert into Resposta values ('4',0,1)
+insert into Resposta values ('7',0,1)
+
+
+insert into Pergunta values('Calcule: 528 * 10',2,1)
+
+insert into Resposta values ('5290',0,1)
+insert into Resposta values ('5280',1,1)
+insert into Resposta values ('5380',0,1)
+insert into Resposta values ('5270',0,1)
+
+
+insert into Pergunta values('Calcule: 30 * 5',2,1)
+
+insert into Resposta values ('180',0,1)
+insert into Resposta values ('160',0,1)
+insert into Resposta values ('150',1,1)
+insert into Resposta values ('170',0,1)
+
+
+insert into Pergunta values('Calcule: 229 + 245',2,1)
+
+insert into Resposta values ('473',0,1)
+insert into Resposta values ('471',0,1)
+insert into Resposta values ('472',0,1)
+insert into Resposta values ('474',1,1)
+
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-insert into Pergunta values('Calcule: 455 x 5',3,1)
+insert into Pergunta values('Calcule: 455 * 5',3,1)
 
 insert into Resposta values ('2335',0,1)
 insert into Resposta values ('2255',0,1)
 insert into Resposta values ('2375',0,1)
 insert into Resposta values ('2275',1,1)
 
-insert into Pergunta values('Calcule: 441 x 5',3,1)
+insert into Pergunta values('Calcule: 441 * 5',3,1)
 
 insert into Resposta values ('2205',1,1)
 insert into Resposta values ('2105',0,1)
@@ -146,7 +210,7 @@ insert into Resposta values ('2305',0,1)
 
 
 
-insert into Pergunta values('Calcule:346 x 8 ',3,1)
+insert into Pergunta values('Calcule:346 * 8 ',3,1)
 
 insert into Resposta values ('2128',0,1)
 insert into Resposta values ('2788',0,1)
