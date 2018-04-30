@@ -33,16 +33,16 @@ insert into Pergunta values('Quanto vale em minutos 8h e 37m',1,1)
 insert into Resposta values ('497min',0,1)
 insert into Resposta values ('537min',0,1)
 insert into Resposta values ('517min',1,1)
-insert into Resposta values ('627min,',0,1)
+insert into Resposta values ('627min',0,1)
 
 
 
 insert into Pergunta values('Quanto vale em metros 7km',1,1)
 
-insert into Resposta values ('7000m',0,1)
-insert into Resposta values ('700m',1,1)
+insert into Resposta values ('7000m' ,0,1)
+insert into Resposta values ('700m'  ,1,1)
 insert into Resposta values ('70000m',0,1)
-insert into Resposta values ('7700m',0,1)
+insert into Resposta values ('7700m' ,0,1)
 
 
 insert into Pergunta values('Calcule: 304 x 2',1,1)
@@ -87,10 +87,10 @@ insert into Resposta values ('5',0,1)
 
 insert into Pergunta values('Calcule: 81/9',1,1)
 
-insert into Resposta values ('7',0,1)
+insert into Resposta values ('7' ,0,1)
 insert into Resposta values ('10',0,1)
-insert into Resposta values ('8',0,1)
-insert into Resposta values ('9',1,1)
+insert into Resposta values ('8' ,0,1)
+insert into Resposta values ('9' ,1,1)
 
 
 insert into Pergunta values('Calcule: 36/9',1,1)
@@ -104,6 +104,28 @@ insert into Resposta values ('6',0,1)
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
+insert into Pergunta values('Simplifique: 21/6',2,1)
+
+insert into Resposta values ('7/2',1,1)
+insert into Resposta values ('8/3',0,1)
+insert into Resposta values ('7/3',0,1)
+insert into Resposta values ('8/5',0,1)
+
+
+insert into Pergunta values('Simplifique: 16/10',2,1)
+
+insert into Resposta values ('7/4',1,1)
+insert into Resposta values ('4/3',0,1)
+insert into Resposta values ('8/3',0,1)
+insert into Resposta values ('8/5',1,1)
+
+
+insert into Pergunta values('Simplifique: 21/6',2,1)
+
+insert into Resposta values ('7/2',1,1)
+insert into Resposta values ('8/3',0,1)
+insert into Resposta values ('7/3',0,1)
+insert into Resposta values ('8/5',0,1)
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -151,9 +173,6 @@ insert into Resposta values ('252',1,1)
 insert into Resposta values ('292',0,1)
 
 
-
-
-
 insert into Pergunta values('Paulo tinha 18 caixas com 10 lápis cada uma, ele perdeu 6 lápis.Quantos lápis ele tem agora',3,1)
 
 insert into Resposta values ('166',0,1)
@@ -162,11 +181,35 @@ insert into Resposta values ('176',0,1)
 insert into Resposta values ('174',1,1)
 
 
+insert into Pergunta values('A fração 7/3 corresponde a:',3,1)
+
+insert into Resposta values ('3.5',1,1)
+insert into Resposta values ('4.5',0,1)
+insert into Resposta values ('3.6',0,1)
+insert into Resposta values ('3.2',0,1)
 
 
+insert into Pergunta values('A fração 8/5 corresponde a:',3,1)
+
+insert into Resposta values ('1.5',0,1)
+insert into Resposta values ('2.5',0,1)
+insert into Resposta values ('1.6',1,1)
+insert into Resposta values ('1.8',0,1)
 
 
+insert into Pergunta values('A fração 6/15 corresponde a:',3,1)
 
+insert into Resposta values ('3.1',0,1)
+insert into Resposta values ('2.5',1,1)
+insert into Resposta values ('2.6',1,1)
+insert into Resposta values ('1.8',0,1)
+
+insert into Pergunta values('A fração 70/9 corresponde a:',3,1)
+
+insert into Resposta values ('7.777...',1,1)
+insert into Resposta values ('7.666...',0,1)
+insert into Resposta values ('6.777...',1,1)
+insert into Resposta values ('7.888...',0,1)
 
 
 
