@@ -17,8 +17,8 @@ namespace ProjetoMarcia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FrmInicio());
-            Application.Run(new frmFase1());
+            Application.Run(new FrmInicio());
+            //Application.Run(new frmFase1());
         }
     }
 }

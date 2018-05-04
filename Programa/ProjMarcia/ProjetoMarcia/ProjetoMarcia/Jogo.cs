@@ -18,16 +18,33 @@ namespace ProjetoMarcia
         public frmJogo()
         {
             InitializeComponent();
+            btnProximo.Enabled = false;
+            btnProximo.Visible = false;
            // imagensInicio = 1;
             
         }
 
         private void frmJogo_Load(object sender, EventArgs e)
         {
-           // AtivaBotoes();
+           //AtivaBotoes();
         }
 
         private void tmrInstrucoes_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProximo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProximo_Click_1(object sender, EventArgs e)
         {
 
         }
