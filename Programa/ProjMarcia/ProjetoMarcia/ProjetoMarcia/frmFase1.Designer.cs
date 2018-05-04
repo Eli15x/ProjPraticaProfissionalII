@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRes1 = new System.Windows.Forms.Button();
+            this.btnRes3 = new System.Windows.Forms.Button();
+            this.btnRes2 = new System.Windows.Forms.Button();
+            this.btnRes4 = new System.Windows.Forms.Button();
+            this.lblPergunta = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,45 +49,54 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
-            // button1
+            // btnRes1
             // 
-            this.button1.Font = new System.Drawing.Font("Proxy 1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(71, 350);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(305, 58);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "teste";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRes1.Font = new System.Drawing.Font("Proxy 1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRes1.Location = new System.Drawing.Point(71, 350);
+            this.btnRes1.Name = "btnRes1";
+            this.btnRes1.Size = new System.Drawing.Size(305, 58);
+            this.btnRes1.TabIndex = 1;
+            this.btnRes1.Text = "teste";
+            this.btnRes1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnRes3
             // 
-            this.button2.Font = new System.Drawing.Font("Proxy 1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(71, 442);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(305, 58);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "teste";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRes3.Font = new System.Drawing.Font("Proxy 1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRes3.Location = new System.Drawing.Point(71, 442);
+            this.btnRes3.Name = "btnRes3";
+            this.btnRes3.Size = new System.Drawing.Size(305, 58);
+            this.btnRes3.TabIndex = 2;
+            this.btnRes3.Text = "teste";
+            this.btnRes3.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnRes2
             // 
-            this.button3.Font = new System.Drawing.Font("Proxy 1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(529, 350);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(305, 58);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "teste";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnRes2.Font = new System.Drawing.Font("Proxy 1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRes2.Location = new System.Drawing.Point(529, 350);
+            this.btnRes2.Name = "btnRes2";
+            this.btnRes2.Size = new System.Drawing.Size(305, 58);
+            this.btnRes2.TabIndex = 3;
+            this.btnRes2.Text = "teste";
+            this.btnRes2.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnRes4
             // 
-            this.button4.Font = new System.Drawing.Font("Proxy 1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(529, 442);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(305, 58);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "teste";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnRes4.Font = new System.Drawing.Font("Proxy 1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRes4.Location = new System.Drawing.Point(529, 442);
+            this.btnRes4.Name = "btnRes4";
+            this.btnRes4.Size = new System.Drawing.Size(305, 58);
+            this.btnRes4.TabIndex = 4;
+            this.btnRes4.Text = "teste";
+            this.btnRes4.UseVisualStyleBackColor = true;
+            // 
+            // lblPergunta
+            // 
+            this.lblPergunta.AutoSize = true;
+            this.lblPergunta.Location = new System.Drawing.Point(303, 170);
+            this.lblPergunta.Name = "lblPergunta";
+            this.lblPergunta.Size = new System.Drawing.Size(35, 13);
+            this.lblPergunta.TabIndex = 5;
+            this.lblPergunta.Text = "label1";
             // 
             // frmFase1
             // 
@@ -94,10 +104,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjetoMarcia.Properties.Resources.fundoObscuro1;
             this.ClientSize = new System.Drawing.Size(914, 512);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblPergunta);
+            this.Controls.Add(this.btnRes4);
+            this.Controls.Add(this.btnRes2);
+            this.Controls.Add(this.btnRes3);
+            this.Controls.Add(this.btnRes1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmFase1";
             this.Text = "frmFase1";
@@ -105,15 +116,17 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmFase1_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnRes1;
+        private System.Windows.Forms.Button btnRes3;
+        private System.Windows.Forms.Button btnRes2;
+        private System.Windows.Forms.Button btnRes4;
+        private System.Windows.Forms.Label lblPergunta;
     }
 }
