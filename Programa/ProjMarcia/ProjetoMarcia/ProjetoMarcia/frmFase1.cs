@@ -151,5 +151,57 @@ namespace ProjetoMarcia
                 timer = 0;
             }
         }
+        private Boolean VerficaResposta(String resposta, String pergunta)
+        {
+            int status = 0;
+            try
+            {
+                // cria conexao ao banco de dados
+                if (con == null)
+                {
+                    con = new SqlConnection();
+                    cs = cs.Substring(cs.IndexOf("Data Source"));
+                    con.ConnectionString = cs;
+                }
+
+                // cria comando de consulta ao SQL da pergunta
+                string cmd_s = "select status from Resposta where resposta=@resposta and codPergunta"+
+                                "in (select codPergunta from Pergunta where pergunta = @pergunta)";
+                SqlCommand cmd = new SqlCommand(cmd_s, con);
+                cmd.Parameters.AddWithValue("@resposta", resposta);
+                cmd.Parameters.AddWithValue("@pergunta", pergunta);
+
+                con.Open();
+
+                SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+                adapt.Fill(ds);
+                con.Close();
+
+               
+
+                if (ds.Tables[0].Rows.Count >= 1)
+                {
+                    DataRow dr = ds.Tables[0].Rows[i];
+
+                    status = Convert.ToInt16(dr.ItemArray[1]));
+
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            if (status == 0)
+                return false;
+
+            return true;
+        }
+
     }
+   
 }
