@@ -13,8 +13,13 @@ namespace ProjetoMarcia
 {
     public partial class frmFase1 : Form
     {
-        Bitmap vilao1 = new Bitmap(@"vilao1.png");
+        Bitmap vilao1  = new Bitmap(@"vilao1.png");
         Bitmap coracao = new Bitmap(@"coracao.png");
+     
+
+
+        int timer = 0;
+        int vida  = 3;
 
 
         string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
@@ -36,7 +41,6 @@ namespace ProjetoMarcia
 
         private void atualizarTela()
         {
-
             try
             {
                 // cria conexao ao banco de dados
@@ -61,11 +65,7 @@ namespace ProjetoMarcia
 
 
                 Random rd = new Random();
-
                 int i = rd.Next(20);
-
-                
-
                 
                 if (ds.Tables[0].Rows.Count >= 1)
                 {
@@ -75,16 +75,16 @@ namespace ProjetoMarcia
 
                     //Pegar as respostas
                     String codPergunta = dr.ItemArray[0].ToString();
-                    passaRespostas("1");//codPergunta);
-                    
+                    passaRespostas(codPergunta);                    
                 }
             }
-
-
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+            pictureBox1.Invalidate();
+            
         }
 
         private void passaRespostas (String codP)
@@ -118,10 +118,6 @@ namespace ProjetoMarcia
 
                 DataRow drResp4 = dsResp.Tables[0].Rows[3];
                 btnRes4.Text = drResp4.ItemArray[0].ToString();
-
-                
-
-
             }
         }
 
@@ -131,8 +127,81 @@ namespace ProjetoMarcia
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawImage(vilao1, 0, 0, 273, 274);
-            e.Graphics.DrawImage(coracao, 200, 210, 50, 50);
+            e.Graphics.DrawImage(vilao1,    0, 0, 273, 274);
+            if(vida>=3)
+                e.Graphics.DrawImage(coracao, 650, 10, 50, 50);
+                        
+            if (vida>=2)
+                e.Graphics.DrawImage(coracao, 700, 10, 50, 50);
+         
+            if (vida>=1)
+                e.Graphics.DrawImage(coracao, 750, 10, 50, 50);
+           
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            timer++;
+
+            if(timer==3)
+            {
+                vida--;
+                atualizarTela();
+                timer = 0;
+            }
+        }
+        private Boolean VerficaResposta(String resposta, String pergunta)
+        {
+            int status = 0;
+            try
+            {
+                // cria conexao ao banco de dados
+                if (con == null)
+                {
+                    con = new SqlConnection();
+                    cs = cs.Substring(cs.IndexOf("Data Source"));
+                    con.ConnectionString = cs;
+                }
+
+                // cria comando de consulta ao SQL da pergunta
+                string cmd_s = "select status from Resposta where resposta=@resposta and codPergunta"+
+                                "in (select codPergunta from Pergunta where pergunta = @pergunta)";
+                SqlCommand cmd = new SqlCommand(cmd_s, con);
+                cmd.Parameters.AddWithValue("@resposta", resposta);
+                cmd.Parameters.AddWithValue("@pergunta", pergunta);
+
+                con.Open();
+
+                SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+                adapt.Fill(ds);
+                con.Close();
+
+               
+
+                if (ds.Tables[0].Rows.Count >= 1)
+                {
+                    DataRow dr = ds.Tables[0].Rows[i];
+
+                    status = Convert.ToInt16(dr.ItemArray[1]));
+
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            if (status == 0)
+                return false;
+
+            return true;
+        }
+
     }
+   
 }
