@@ -89,7 +89,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(17)))), ((int)(((byte)(2)))));
             this.label2.Font = new System.Drawing.Font("OCR A Extended", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label2.Location = new System.Drawing.Point(216, 227);
+            this.label2.Location = new System.Drawing.Point(225, 214);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(489, 116);
             this.label2.TabIndex = 9;

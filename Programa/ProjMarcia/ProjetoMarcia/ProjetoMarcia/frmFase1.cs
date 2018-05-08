@@ -13,8 +13,6 @@ namespace ProjetoMarcia
 {
     public partial class frmFase1 : Form
     {
-        string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
-
         Bitmap vilao1 = new Bitmap(@"vilao1.png");
 
         public frmFase1()

@@ -20,8 +20,10 @@ namespace ProjetoMarcia
             InitializeComponent();
             btnProximo.Enabled = false;
             btnProximo.Visible = false;
-           // imagensInicio = 1;
-            
+            tmrInstrucoes.Interval = 1000;
+            tmrInstrucoes.Tick += new EventHandler(tmrInstrucoes_Tick);
+            // imagensInicio = 1;
+
         }
 
         private void frmJogo_Load(object sender, EventArgs e)
