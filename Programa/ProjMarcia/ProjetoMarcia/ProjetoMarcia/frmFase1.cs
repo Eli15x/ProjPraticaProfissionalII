@@ -13,10 +13,10 @@ namespace ProjetoMarcia
 {
     public partial class frmFase1 : Form
     {
-        Bitmap vilao1 = new Bitmap(@"vilao1.png");
-        Bitmap coracao1 = new Bitmap(@"coracao.png");
-        Bitmap coracao2 = new Bitmap(@"coracao.png");
-        Bitmap coracao3 = new Bitmap(@"coracao.png");
+        Bitmap vilao1  = new Bitmap(@"vilao1.png");
+        Bitmap coracao = new Bitmap(@"coracao.png");
+     
+
 
         int timer = 0;
         int vida  = 3;
@@ -83,7 +83,7 @@ namespace ProjetoMarcia
                 MessageBox.Show(ex.Message);
             }
 
-            Invalidate();
+            pictureBox1.Invalidate();
             
         }
 
@@ -129,18 +129,22 @@ namespace ProjetoMarcia
         {
             e.Graphics.DrawImage(vilao1,    0, 0, 273, 274);
             if(vida>=3)
-                e.Graphics.DrawImage(coracao1, 650, 10, 50, 50);
-            if(vida>=2)
-                e.Graphics.DrawImage(coracao2, 700, 10, 50, 50);
+                e.Graphics.DrawImage(coracao, 650, 10, 50, 50);
+                        
+            if (vida>=2)
+                e.Graphics.DrawImage(coracao, 700, 10, 50, 50);
+         
             if (vida>=1)
-                e.Graphics.DrawImage(coracao3, 750, 10, 50, 50);
+                e.Graphics.DrawImage(coracao, 750, 10, 50, 50);
+           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
             timer++;
 
-            if(timer==10)
+            if(timer==3)
             {
                 vida--;
                 atualizarTela();
