@@ -18,10 +18,14 @@ namespace ProjetoMarcia
         public frmJogo()
         {
             InitializeComponent();
-            btnProximo.Enabled = false;
-            btnProximo.Visible = false;
-            tmrInstrucoes.Interval = 1000;
-            tmrInstrucoes.Tick += new EventHandler(tmrInstrucoes_Tick);
+            picFase1.Visible = false;
+            picFase2.Visible = false;
+            picFase1.Enabled = false;
+            picFase2.Enabled = false;
+            // btnProximo.Enabled = false;
+            //btnProximo.Visible = false;
+            // tmrInstrucoes.Interval = 3000;
+            // tmrInstrucoes.Tick += new EventHandler(tmrInstrucoes_Tick);
             // imagensInicio = 1;
 
         }
@@ -33,12 +37,13 @@ namespace ProjetoMarcia
 
         private void tmrInstrucoes_Tick(object sender, EventArgs e)
         {
-
+          //btnProximo.Enabled = true;
+          // btnProximo.Visible = true;
         }
 
         private void btnProximo_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -47,6 +52,23 @@ namespace ProjetoMarcia
         }
 
         private void btnProximo_Click_1(object sender, EventArgs e)
+        {
+            btnProximo.Visible = false;
+            lblInfo.Text = "Escolha sua fase:";
+            lblInfo.Left = 325;
+            lblInfo.Top  = 200; 
+            picFase1.Visible = true;
+            picFase1.Enabled = true;
+            picFase2.Enabled = true;
+            picFase2.Visible = true;
+        }
+
+        private void picFase1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picFase2_Click(object sender, EventArgs e)
         {
 
         }
