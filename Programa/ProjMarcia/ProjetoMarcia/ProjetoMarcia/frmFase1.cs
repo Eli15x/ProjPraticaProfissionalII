@@ -144,7 +144,7 @@ namespace ProjetoMarcia
 
             timer++;
 
-            if(timer==3)
+            if(timer==10)
             {
                 vida--;
                 atualizarTela();
@@ -202,6 +202,53 @@ namespace ProjetoMarcia
             return true;
         }
 
+        private void btnRes1_Click(object sender, EventArgs e)
+        {
+            if (VerficaResposta(btnRes1.Text, lblPergunta.Text))
+            {
+                MessageBox.Show("C*U*A Mundo");
+            }
+            else
+            {
+                MessageBox.Show("Errou");
+            }
+        }
+
+        private void btnRes2_Click(object sender, EventArgs e)
+        {
+            if (VerficaResposta(btnRes2.Text, lblPergunta.Text))
+            {
+                MessageBox.Show("C*U*A Mundo");
+            }
+            else
+            {
+                MessageBox.Show("Errou");
+            }
+        }
+
+        private void btnRes3_Click(object sender, EventArgs e)
+        {
+            if (VerficaResposta(btnRes3.Text, lblPergunta.Text))
+            {
+                MessageBox.Show("C*U*A Mundo");
+            }
+            else
+            {
+                MessageBox.Show("Errou");
+            }
+        }
+
+        private void btnRes4_Click(object sender, EventArgs e)
+        {
+            if (VerficaResposta(btnRes4.Text, lblPergunta.Text))
+            {
+                MessageBox.Show("C*U*A Mundo");
+            }
+            else
+            {
+                MessageBox.Show("Errou");
+            }
+        }
     }
    
 }

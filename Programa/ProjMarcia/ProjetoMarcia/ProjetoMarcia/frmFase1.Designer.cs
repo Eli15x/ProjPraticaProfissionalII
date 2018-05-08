@@ -62,6 +62,7 @@
             this.btnRes1.TabIndex = 1;
             this.btnRes1.Text = "teste";
             this.btnRes1.UseVisualStyleBackColor = true;
+            this.btnRes1.Click += new System.EventHandler(this.btnRes1_Click);
             // 
             // btnRes3
             // 
@@ -72,6 +73,7 @@
             this.btnRes3.TabIndex = 2;
             this.btnRes3.Text = "teste";
             this.btnRes3.UseVisualStyleBackColor = true;
+            this.btnRes3.Click += new System.EventHandler(this.btnRes3_Click);
             // 
             // btnRes2
             // 
@@ -82,6 +84,7 @@
             this.btnRes2.TabIndex = 3;
             this.btnRes2.Text = "teste";
             this.btnRes2.UseVisualStyleBackColor = true;
+            this.btnRes2.Click += new System.EventHandler(this.btnRes2_Click);
             // 
             // btnRes4
             // 
@@ -92,6 +95,7 @@
             this.btnRes4.TabIndex = 4;
             this.btnRes4.Text = "teste";
             this.btnRes4.UseVisualStyleBackColor = true;
+            this.btnRes4.Click += new System.EventHandler(this.btnRes4_Click);
             // 
             // lblPergunta
             // 
