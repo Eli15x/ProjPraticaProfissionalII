@@ -14,6 +14,8 @@ namespace ProjetoMarcia
     public partial class frmFase1 : Form
     {
         Bitmap vilao1 = new Bitmap(@"vilao1.png");
+        Bitmap coracao = new Bitmap(@"coracao.png");
+
 
         string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
         SqlConnection con = null;
@@ -130,6 +132,7 @@ namespace ProjetoMarcia
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawImage(vilao1, 0, 0, 273, 274);
+            e.Graphics.DrawImage(coracao, 200, 210, 50, 50);
         }
     }
 }

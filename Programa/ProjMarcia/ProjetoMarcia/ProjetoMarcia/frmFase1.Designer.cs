@@ -34,14 +34,16 @@
             this.btnRes2 = new System.Windows.Forms.Button();
             this.btnRes4 = new System.Windows.Forms.Button();
             this.lblPergunta = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::ProjetoMarcia.Properties.Resources.fase11;
-            this.pictureBox1.Location = new System.Drawing.Point(51, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(45, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(834, 312);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -92,11 +94,19 @@
             // lblPergunta
             // 
             this.lblPergunta.AutoSize = true;
-            this.lblPergunta.Location = new System.Drawing.Point(303, 170);
+            this.lblPergunta.Location = new System.Drawing.Point(376, 279);
             this.lblPergunta.Name = "lblPergunta";
             this.lblPergunta.Size = new System.Drawing.Size(35, 13);
             this.lblPergunta.TabIndex = 5;
             this.lblPergunta.Text = "label1";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(-23, -45);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // frmFase1
             // 
@@ -104,6 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjetoMarcia.Properties.Resources.fundoObscuro1;
             this.ClientSize = new System.Drawing.Size(914, 512);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblPergunta);
             this.Controls.Add(this.btnRes4);
             this.Controls.Add(this.btnRes2);
@@ -115,6 +126,7 @@
             this.Load += new System.EventHandler(this.frmFase1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmFase1_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,5 +140,6 @@
         private System.Windows.Forms.Button btnRes2;
         private System.Windows.Forms.Button btnRes4;
         private System.Windows.Forms.Label lblPergunta;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

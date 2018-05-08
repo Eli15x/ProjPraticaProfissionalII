@@ -73,6 +73,16 @@ namespace ProjetoMarcia.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coracao {
+            get {
+                object obj = ResourceManager.GetObject("coracao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fase1 {
             get {
                 object obj = ResourceManager.GetObject("fase1", resourceCulture);
