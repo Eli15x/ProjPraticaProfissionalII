@@ -126,3 +126,17 @@ C:\Users\u17171\Documents\GitHub\ProjPraticaProfissionalII\Programa\ProjMarcia\P
 C:\Users\u17171\Documents\GitHub\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.CoreCompileInputs.cache
 C:\Users\u17171\Documents\GitHub\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.exe
 C:\Users\u17171\Documents\GitHub\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.pdb
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe.config
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.pdb
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csprojResolveAssemblyReference.cache
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmCadastro.resources
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.FrmInicio.resources
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmFase1.resources
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmJogo.resources
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmLogin.resources
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.Properties.Resources.resources
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.GenerateResource.Cache
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.CoreCompileInputs.cache
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.exe
+C:\Users\u17172\Desktop\Pratica(certa)\ProjPraticaProfissionalII\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.pdb

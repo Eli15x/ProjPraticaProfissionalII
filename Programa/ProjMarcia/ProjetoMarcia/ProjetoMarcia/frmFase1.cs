@@ -15,6 +15,9 @@ namespace ProjetoMarcia
     {
         Bitmap vilao1 = new Bitmap(@"vilao1.png");
 
+        string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
+        SqlConnection con = null;
+
         public frmFase1()
         {
             InitializeComponent();
@@ -26,14 +29,21 @@ namespace ProjetoMarcia
             //pictureBox2.BringToFront();
             pictureBox1.Invalidate();
 
+            atualizarTela();
+        }
 
+        private void atualizarTela()
+        {
 
             try
             {
                 // cria conexao ao banco de dados
-                SqlConnection con = new SqlConnection();
-                cs = cs.Substring(cs.IndexOf("Data Source"));
-                con.ConnectionString = cs;
+                if (con == null)
+                {
+                    con = new SqlConnection();
+                    cs = cs.Substring(cs.IndexOf("Data Source"));
+                    con.ConnectionString = cs;
+                }
 
                 // cria comando de consulta ao SQL da pergunta
                 string cmd_s = "select * from Pergunta where dificultade between 1 and 2";
@@ -52,6 +62,9 @@ namespace ProjetoMarcia
 
                 int i = rd.Next(20);
 
+                
+
+                
                 if (ds.Tables[0].Rows.Count >= 1)
                 {
                     DataRow dr = ds.Tables[0].Rows[i];
@@ -59,13 +72,13 @@ namespace ProjetoMarcia
                     lblPergunta.Text = dr.ItemArray[1].ToString();
 
                     //Pegar as respostas
+                    //passaRespostas();
 
                     // cria comando de consulta ao SQL da resposta
                     string cmd_sR = "select resposta from Resposta where codPergunta=@codPergunta";
                     SqlCommand cmdR = new SqlCommand(cmd_sR, con);
-
                     String codPergunta = dr.ItemArray[0].ToString();
-                    cmd.Parameters.AddWithValue("@codPergunta", codPergunta);
+                    cmdR.Parameters.AddWithValue("@codPergunta", codPergunta);
 
                     con.Open();
 
@@ -87,12 +100,20 @@ namespace ProjetoMarcia
                     }
 
 
+
                 }
             }
+
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void passaRespostas ()
+        {
+            
         }
 
         private void frmFase1_Paint(object sender, PaintEventArgs e)
