@@ -18,6 +18,9 @@ namespace ProjetoMarcia
         Bitmap coracao2 = new Bitmap(@"coracao.png");
         Bitmap coracao3 = new Bitmap(@"coracao.png");
 
+        int timer = 0;
+        int vida  = 3;
+
 
         string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
         SqlConnection con = null;
@@ -81,6 +84,7 @@ namespace ProjetoMarcia
             }
 
             Invalidate();
+            
         }
 
         private void passaRespostas (String codP)
@@ -124,14 +128,24 @@ namespace ProjetoMarcia
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawImage(vilao1,    0, 0, 273, 274);
-            e.Graphics.DrawImage(coracao1, 650, 10, 50, 50);
-            e.Graphics.DrawImage(coracao2, 700, 10, 50, 50);
-            e.Graphics.DrawImage(coracao3, 750, 10, 50, 50);
+            if(vida>=3)
+                e.Graphics.DrawImage(coracao1, 650, 10, 50, 50);
+            if(vida>=2)
+                e.Graphics.DrawImage(coracao2, 700, 10, 50, 50);
+            if (vida>=1)
+                e.Graphics.DrawImage(coracao3, 750, 10, 50, 50);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            timer++;
 
+            if(timer==10)
+            {
+                vida--;
+                atualizarTela();
+                timer = 0;
+            }
         }
     }
 }
