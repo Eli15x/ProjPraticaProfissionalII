@@ -183,9 +183,9 @@ namespace ProjetoMarcia
 
                 if (ds.Tables[0].Rows.Count >= 1)
                 {
-                    DataRow dr = ds.Tables[0].Rows[i];
+                    DataRow dr = ds.Tables[0].Rows[0];
 
-                    status = Convert.ToInt16(dr.ItemArray[1]));
+                    status = Convert.ToInt16(dr.ItemArray[1]);
 
                 }
 
