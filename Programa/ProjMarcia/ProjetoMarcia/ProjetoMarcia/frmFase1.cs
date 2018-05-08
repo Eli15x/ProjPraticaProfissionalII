@@ -14,7 +14,9 @@ namespace ProjetoMarcia
     public partial class frmFase1 : Form
     {
         Bitmap vilao1 = new Bitmap(@"vilao1.png");
-        Bitmap coracao = new Bitmap(@"coracao.png");
+        Bitmap coracao1 = new Bitmap(@"coracao.png");
+        Bitmap coracao2 = new Bitmap(@"coracao.png");
+        Bitmap coracao3 = new Bitmap(@"coracao.png");
 
 
         string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
@@ -36,7 +38,6 @@ namespace ProjetoMarcia
 
         private void atualizarTela()
         {
-
             try
             {
                 // cria conexao ao banco de dados
@@ -61,11 +62,7 @@ namespace ProjetoMarcia
 
 
                 Random rd = new Random();
-
                 int i = rd.Next(20);
-
-                
-
                 
                 if (ds.Tables[0].Rows.Count >= 1)
                 {
@@ -75,16 +72,15 @@ namespace ProjetoMarcia
 
                     //Pegar as respostas
                     String codPergunta = dr.ItemArray[0].ToString();
-                    passaRespostas("1");//codPergunta);
-                    
+                    passaRespostas(codPergunta);                    
                 }
             }
-
-
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+            Invalidate();
         }
 
         private void passaRespostas (String codP)
@@ -118,10 +114,6 @@ namespace ProjetoMarcia
 
                 DataRow drResp4 = dsResp.Tables[0].Rows[3];
                 btnRes4.Text = drResp4.ItemArray[0].ToString();
-
-                
-
-
             }
         }
 
@@ -131,8 +123,15 @@ namespace ProjetoMarcia
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawImage(vilao1, 0, 0, 273, 274);
-            e.Graphics.DrawImage(coracao, 200, 210, 50, 50);
+            e.Graphics.DrawImage(vilao1,    0, 0, 273, 274);
+            e.Graphics.DrawImage(coracao1, 650, 10, 50, 50);
+            e.Graphics.DrawImage(coracao2, 700, 10, 50, 50);
+            e.Graphics.DrawImage(coracao3, 750, 10, 50, 50);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
