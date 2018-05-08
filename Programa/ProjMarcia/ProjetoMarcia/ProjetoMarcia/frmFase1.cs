@@ -72,35 +72,9 @@ namespace ProjetoMarcia
                     lblPergunta.Text = dr.ItemArray[1].ToString();
 
                     //Pegar as respostas
-                    //passaRespostas();
-
-                    // cria comando de consulta ao SQL da resposta
-                    string cmd_sR = "select resposta from Resposta where codPergunta=@codPergunta";
-                    SqlCommand cmdR = new SqlCommand(cmd_sR, con);
                     String codPergunta = dr.ItemArray[0].ToString();
-                    cmdR.Parameters.AddWithValue("@codPergunta", codPergunta);
-
-                    con.Open();
-
-                    SqlDataAdapter adaptResp = new SqlDataAdapter(cmdR);
-                    DataSet dsResp = new DataSet();
-
-                    adaptResp.Fill(dsResp);
-                    con.Close();
-
-
-                    if (dsResp.Tables[0].Rows.Count >= 1)
-                    {
-
-                        DataRow drResp = dsResp.Tables[0].Rows[0];
-
-
-                        btnRes1.Text = drResp.ItemArray[0].ToString();
-
-                    }
-
-
-
+                    passaRespostas("1");//codPergunta);
+                    
                 }
             }
 
@@ -111,9 +85,42 @@ namespace ProjetoMarcia
             }
         }
 
-        private void passaRespostas ()
+        private void passaRespostas (String codP)
         {
-            
+            // cria comando de consulta ao SQL da resposta
+            string cmd_sR = "select resposta from Resposta where codPergunta=@codPergunta";
+            SqlCommand cmdR = new SqlCommand(cmd_sR, con);
+           
+            cmdR.Parameters.AddWithValue("@codPergunta", codP);
+
+            con.Open();
+
+            SqlDataAdapter adaptResp = new SqlDataAdapter(cmdR);
+            DataSet dsResp = new DataSet();
+
+            adaptResp.Fill(dsResp);
+            con.Close();
+
+
+            if (dsResp.Tables[0].Rows.Count >= 1)
+            {
+
+                DataRow drResp1 = dsResp.Tables[0].Rows[0];                
+                btnRes1.Text = drResp1.ItemArray[0].ToString();
+
+                DataRow drResp2 = dsResp.Tables[0].Rows[1];
+                btnRes2.Text = drResp2.ItemArray[0].ToString();
+
+                DataRow drResp3 = dsResp.Tables[0].Rows[2];
+                btnRes3.Text = drResp3.ItemArray[0].ToString();
+
+                DataRow drResp4 = dsResp.Tables[0].Rows[3];
+                btnRes4.Text = drResp4.ItemArray[0].ToString();
+
+                
+
+
+            }
         }
 
         private void frmFase1_Paint(object sender, PaintEventArgs e)
