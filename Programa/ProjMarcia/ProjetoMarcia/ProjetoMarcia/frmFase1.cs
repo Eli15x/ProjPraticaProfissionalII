@@ -165,7 +165,7 @@ namespace ProjetoMarcia
                 }
 
                 // cria comando de consulta ao SQL da pergunta
-                string cmd_s = "select status from Resposta where resposta=@resposta and codPergunta"+
+                string cmd_s = "select status from Resposta where resposta=@resposta and codPergunta "+
                                 "in (select codPergunta from Pergunta where pergunta = @pergunta)";
                 SqlCommand cmd = new SqlCommand(cmd_s, con);
                 cmd.Parameters.AddWithValue("@resposta", resposta);
@@ -181,13 +181,13 @@ namespace ProjetoMarcia
 
                
 
-                if (ds.Tables[0].Rows.Count >= 1)
-                {
+                //if (ds.Tables[0].Rows.Count == 1)
+                //{
                     DataRow dr = ds.Tables[0].Rows[0];
 
-                    status = Convert.ToInt16(dr.ItemArray[1]);
+                    status = Convert.ToInt16(dr.ItemArray[0]);
 
-                }
+                //}
 
                 
             }
