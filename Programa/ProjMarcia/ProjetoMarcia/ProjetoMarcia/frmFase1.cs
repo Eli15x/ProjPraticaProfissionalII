@@ -181,13 +181,13 @@ namespace ProjetoMarcia
 
                
 
-                //if (ds.Tables[0].Rows.Count == 1)
-                //{
+                if (ds.Tables[0].Rows.Count == 1)
+                {
                     DataRow dr = ds.Tables[0].Rows[0];
 
                     status = Convert.ToInt16(dr.ItemArray[0]);
 
-                //}
+                }
 
                 
             }
@@ -206,11 +206,11 @@ namespace ProjetoMarcia
         {
             if (VerficaResposta(btnRes1.Text, lblPergunta.Text))
             {
-                MessageBox.Show("C*U*A Mundo");
+                acertou();
             }
             else
             {
-                MessageBox.Show("Errou");
+                errou();
             }
         }
 
@@ -218,11 +218,11 @@ namespace ProjetoMarcia
         {
             if (VerficaResposta(btnRes2.Text, lblPergunta.Text))
             {
-                MessageBox.Show("C*U*A Mundo");
+                acertou();
             }
             else
             {
-                MessageBox.Show("Errou");
+                errou();
             }
         }
 
@@ -230,11 +230,11 @@ namespace ProjetoMarcia
         {
             if (VerficaResposta(btnRes3.Text, lblPergunta.Text))
             {
-                MessageBox.Show("C*U*A Mundo");
+                acertou();
             }
             else
             {
-                MessageBox.Show("Errou");
+                errou();
             }
         }
 
@@ -242,13 +242,29 @@ namespace ProjetoMarcia
         {
             if (VerficaResposta(btnRes4.Text, lblPergunta.Text))
             {
-                MessageBox.Show("C*U*A Mundo");
+                acertou();
             }
             else
             {
-                MessageBox.Show("Errou");
+                errou();
             }
         }
+
+        private void acertou()
+        {
+            MessageBox.Show("Acertou");
+            atualizarTela();
+            timer = 0;
+        }
+        private void errou()
+        {
+            MessageBox.Show("Errou");
+            vida--;
+            atualizarTela();
+            timer = 0;
+        }
+
+
     }
-   
+
 }
