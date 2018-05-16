@@ -144,7 +144,7 @@ namespace ProjetoMarcia
 
             timer++;
 
-            if(timer==10)
+            if(timer==20)
             {
                 vida--;
                 atualizarTela();
@@ -204,7 +204,7 @@ namespace ProjetoMarcia
 
         private void btnRes1_Click(object sender, EventArgs e)
         {
-            if (VerficaResposta(btnRes1.Text, lblPergunta.Text))
+            if (VerficaResposta(((Button)sender).Text, lblPergunta.Text))
             {
                 acertou();
             }
@@ -214,41 +214,7 @@ namespace ProjetoMarcia
             }
         }
 
-        private void btnRes2_Click(object sender, EventArgs e)
-        {
-            if (VerficaResposta(btnRes2.Text, lblPergunta.Text))
-            {
-                acertou();
-            }
-            else
-            {
-                errou();
-            }
-        }
 
-        private void btnRes3_Click(object sender, EventArgs e)
-        {
-            if (VerficaResposta(btnRes3.Text, lblPergunta.Text))
-            {
-                acertou();
-            }
-            else
-            {
-                errou();
-            }
-        }
-
-        private void btnRes4_Click(object sender, EventArgs e)
-        {
-            if (VerficaResposta(btnRes4.Text, lblPergunta.Text))
-            {
-                acertou();
-            }
-            else
-            {
-                errou();
-            }
-        }
 
         private void acertou()
         {
@@ -262,6 +228,9 @@ namespace ProjetoMarcia
             vida--;
             atualizarTela();
             timer = 0;
+            if(vida==3)
+            //chama algum form
+
         }
 
 
