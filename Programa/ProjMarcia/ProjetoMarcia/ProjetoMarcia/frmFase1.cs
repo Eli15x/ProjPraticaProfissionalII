@@ -214,8 +214,6 @@ namespace ProjetoMarcia
             }
         }
 
-
-
         private void acertou()
         {
             MessageBox.Show("Acertou");
@@ -228,9 +226,9 @@ namespace ProjetoMarcia
             vida--;
             atualizarTela();
             timer = 0;
-            if(vida==3)
-            //chama algum form
-
+            if (vida == 3)
+            {
+            }
         }
 
 

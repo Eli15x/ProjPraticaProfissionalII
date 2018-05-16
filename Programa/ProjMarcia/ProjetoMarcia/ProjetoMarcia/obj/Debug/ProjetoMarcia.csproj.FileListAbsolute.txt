@@ -182,3 +182,5 @@ C:\Users\u17172\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia
 C:\Users\u17172\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.CoreCompileInputs.cache
 C:\Users\u17172\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.exe
 C:\Users\u17172\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.pdb
+C:\Users\u17172\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.GameOver.resources
+C:\Users\u17172\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmGameOver.resources
