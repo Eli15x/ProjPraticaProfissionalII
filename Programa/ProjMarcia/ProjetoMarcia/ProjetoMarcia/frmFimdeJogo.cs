@@ -31,5 +31,12 @@ namespace ProjetoMarcia
             fLogin.Show();
             this.Close();
         }
+
+        private void btnFase_Click(object sender, EventArgs e)
+        {
+            frmJogo fFases= new frmJogo();
+            fFases.Show();
+            this.Close();
+        }
     }
 }

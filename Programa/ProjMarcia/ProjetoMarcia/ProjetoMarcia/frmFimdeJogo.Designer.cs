@@ -97,6 +97,7 @@
             this.btnFase.TabIndex = 5;
             this.btnFase.Text = "Selecionar fase";
             this.btnFase.UseVisualStyleBackColor = true;
+            this.btnFase.Click += new System.EventHandler(this.btnFase_Click);
             // 
             // frmFimDeJogo
             // 
