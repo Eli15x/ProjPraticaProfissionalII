@@ -144,11 +144,9 @@ namespace ProjetoMarcia
 
             timer++;
 
-            if(timer==20)
+            if(timer==1)
             {
-                vida--;
-                atualizarTela();
-                timer = 0;
+                errou();
             }
         }
         private Boolean VerficaResposta(String resposta, String pergunta)
@@ -226,10 +224,24 @@ namespace ProjetoMarcia
             vida--;
             atualizarTela();
             timer = 0;
-            if (vida == 3)
+            if (vida == 0)
             {
+                frmFimDeJogo fimJogo = new frmFimDeJogo();
+                fimJogo.Show();
+                this.Close();
             }
         }
+        /*
+        private void pararExecucao()
+        {
+            timer1.Enabled = false;
+            btnRes1.Enabled = false;
+            btnRes2.Enabled = false;
+            btnRes3.Enabled = false;
+            btnRes4.Enabled = false;
+
+        }
+        */
 
 
     }

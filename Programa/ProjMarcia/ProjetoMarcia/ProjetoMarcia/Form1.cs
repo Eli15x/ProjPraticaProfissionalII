@@ -26,7 +26,7 @@ namespace ProjetoMarcia
         {
             frmLogin Login = new frmLogin();
             Login.Show();
-            //this.Hide();
+            this.Hide();
         } 
     }
 }

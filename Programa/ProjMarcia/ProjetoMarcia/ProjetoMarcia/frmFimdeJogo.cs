@@ -16,5 +16,18 @@ namespace ProjetoMarcia
         {
             InitializeComponent();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReiniciar_Click(object sender, EventArgs e)
+        {
+            frmFase1 fase1 = new frmFase1();
+            fase1.Show();
+            this.Close();
+
+        }
     }
 }
