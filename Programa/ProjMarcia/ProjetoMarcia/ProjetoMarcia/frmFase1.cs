@@ -127,7 +127,7 @@ namespace ProjetoMarcia
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawImage(vilao1,    0, 0, 273, 274);
+            e.Graphics.DrawImage(vilao1,    0, 0, 100, 100);
             if(vida>=3)
                 e.Graphics.DrawImage(coracao, 650, 10, 50, 50);
                         
@@ -144,7 +144,7 @@ namespace ProjetoMarcia
 
             timer++;
 
-            if(timer==1)
+            if(timer==20)
             {
                 errou();
             }
@@ -231,17 +231,7 @@ namespace ProjetoMarcia
                 this.Close();
             }
         }
-        /*
-        private void pararExecucao()
-        {
-            timer1.Enabled = false;
-            btnRes1.Enabled = false;
-            btnRes2.Enabled = false;
-            btnRes3.Enabled = false;
-            btnRes4.Enabled = false;
-
-        }
-        */
+        
 
 
     }

@@ -68,7 +68,16 @@ namespace ProjetoMarcia
                         DataRow dr = ds.Tables[0].Rows[0];
                         int ret = Convert.ToInt16(dr.ItemArray[0]);
 
-                        MessageBox.Show(ret.ToString());
+                        if (ret == 1)
+                        {
+                            frmJogo Jogo = new frmJogo();
+                            Jogo.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuario e senha não condizem");
+                        }
                     }
 
 
@@ -82,9 +91,7 @@ namespace ProjetoMarcia
                     MessageBox.Show(str, "Database Exception");
                 }
 
-                frmJogo Jogo = new frmJogo();
-                Jogo.Show();
-                this.Hide();
+                
             }
 
         }

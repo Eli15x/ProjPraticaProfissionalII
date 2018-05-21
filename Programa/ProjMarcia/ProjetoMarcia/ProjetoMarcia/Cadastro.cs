@@ -25,17 +25,16 @@ namespace ProjetoMarcia
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             //conferir os dados okay...
-            frmLogin login = new frmLogin();
-            login.Show();
-            this.Hide();
+            
 
 
 
             if ((txtUsuCad.Text == "") || (txtSenCad.Text == "")||(cmbTimeCad.Text == ""))
                 MessageBox.Show("Preencher todos os campos");
 
-            if (!(cmbTimeCad.Text == "Vermelho") || (cmbTimeCad.Text=="Azul"))
+            if (!(cmbTimeCad.Text == "Vermelho") || (cmbTimeCad.Text== "Azul"))
                 MessageBox.Show("Cor de time inválida");
+            
 
 
             else
@@ -76,6 +75,10 @@ namespace ProjetoMarcia
                     MessageBox.Show(str, "Database Exception");
                 }
             }
+
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Hide();
 
         }
 
