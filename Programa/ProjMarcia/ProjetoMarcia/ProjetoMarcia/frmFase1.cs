@@ -15,7 +15,9 @@ namespace ProjetoMarcia
     {
         Bitmap vilao1  = new Bitmap(@"vilao1.png");
         Bitmap coracao = new Bitmap(@"coracao.png");
-     
+        Bitmap usuario = new Bitmap(@"UsuarioAzul.png");
+        
+
 
 
         int timer = 0;
@@ -127,8 +129,10 @@ namespace ProjetoMarcia
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawImage(vilao1,    0, 0, 100, 100);
-            if(vida>=3)
+            e.Graphics.DrawImage(vilao1, 0, 0, 100, 100);
+            e.Graphics.DrawImage(usuario, 700, 100, 100, 100);
+
+            if (vida>=3)
                 e.Graphics.DrawImage(coracao, 650, 10, 50, 50);
                         
             if (vida>=2)
