@@ -20,8 +20,10 @@ namespace ProjetoMarcia
 
 
 
-        int timer = 0;
-        int vida  = 3;
+        int timer     = 0;
+        int vida      = 3;
+        int mortos    = 0;
+        int pontuacao = 0;
 
 
         string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
@@ -43,6 +45,7 @@ namespace ProjetoMarcia
 
         private void atualizarTela()
         {
+
             try
             {
                 // cria conexao ao banco de dados
@@ -68,7 +71,7 @@ namespace ProjetoMarcia
 
                 Random rd = new Random();
                 int i = rd.Next(20);
-                
+
                 if (ds.Tables[0].Rows.Count >= 1)
                 {
                     DataRow dr = ds.Tables[0].Rows[i];
@@ -77,9 +80,10 @@ namespace ProjetoMarcia
 
                     //Pegar as respostas
                     String codPergunta = dr.ItemArray[0].ToString();
-                    passaRespostas(codPergunta);                    
+                    passaRespostas(codPergunta);
                 }
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -87,14 +91,17 @@ namespace ProjetoMarcia
 
             pictureBox1.Invalidate();
             
+
         }
 
-        private void passaRespostas (String codP)
+
+
+        private void passaRespostas(String codP)
         {
             // cria comando de consulta ao SQL da resposta
             string cmd_sR = "select resposta from Resposta where codPergunta=@codPergunta";
             SqlCommand cmdR = new SqlCommand(cmd_sR, con);
-           
+
             cmdR.Parameters.AddWithValue("@codPergunta", codP);
 
             con.Open();
@@ -109,7 +116,7 @@ namespace ProjetoMarcia
             if (dsResp.Tables[0].Rows.Count >= 1)
             {
 
-                DataRow drResp1 = dsResp.Tables[0].Rows[0];                
+                DataRow drResp1 = dsResp.Tables[0].Rows[0];
                 btnRes1.Text = drResp1.ItemArray[0].ToString();
 
                 DataRow drResp2 = dsResp.Tables[0].Rows[1];
@@ -123,13 +130,29 @@ namespace ProjetoMarcia
             }
         }
 
+        
+
         private void frmFase1_Paint(object sender, PaintEventArgs e)
         {
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawImage(vilao1, 0, 0, 100, 100);
+            if (!(mortos % 6 >= 1) || (mortos % 5 == 0))
+                e.Graphics.DrawImage(vilao1, 0, 0, 100, 100);
+
+            if (!(mortos % 6 >= 2) || (mortos % 5 == 0))
+                e.Graphics.DrawImage(vilao1, 65, 50, 100, 100);
+
+            if (!(mortos % 6 >= 3) || (mortos % 5 == 0))
+                e.Graphics.DrawImage(vilao1, 120, 100, 100, 100);
+
+            if (!(mortos % 6 >= 4) || (mortos % 5 == 0))
+                e.Graphics.DrawImage(vilao1, 65, 150, 100, 100);
+
+            if (!(mortos % 6 >= 5) || (mortos % 5 == 0))
+                e.Graphics.DrawImage(vilao1, 0, 200, 100, 100);
+            
             e.Graphics.DrawImage(usuario, 700, 100, 100, 100);
 
             if (vida>=3)
@@ -219,21 +242,36 @@ namespace ProjetoMarcia
         private void acertou()
         {
             MessageBox.Show("Acertou");
-            atualizarTela();
+            mortos++;
+            if(mortos==5)
+            {
+                MessageBox.Show("Voce acabou com a primeira onda, continue assim");
+            }
+            if(mortos ==10)
+            {
+                //acabou a fase 1
+                pontuacao = pontuacao * vida;
+                //registrar sua pontação no banco
+            }
+            atualizarTela();            
             timer = 0;
+            pontuacao += 10 *(10-timer);
+            
         }
         private void errou()
         {
             MessageBox.Show("Errou");
             vida--;
+            
             atualizarTela();
             timer = 0;
+           
             if (vida == 0)
             {
                 frmFimDeJogo fimJogo = new frmFimDeJogo();
                 fimJogo.Show();
                 this.Close();
-            }
+            }            
         }
         
 
