@@ -26,7 +26,7 @@ namespace ProjetoMarcia
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
 
-            if ((txtUsuCad.Text == "") || (txtSenCad.Text == "") || (cmbTimeCad.Text == ""))
+            if ((txtUsuCad.Text == "") || (txtSenCad.Text == ""))
                 MessageBox.Show("Preencher todos os campos");
 
 

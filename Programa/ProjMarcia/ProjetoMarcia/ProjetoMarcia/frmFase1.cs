@@ -277,10 +277,22 @@ namespace ProjetoMarcia
                 pontuacao = pontuacao * vida;
                 //Verificar sua maior pontação no banco e se for
                 //menor do a atual, substituila
+
+              
                 if (compararPontuacao())
                 {
                     inserePontuacao();
+                    frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario, "Novo Recorde", pontuacao);
+                    fimJogo.Show();
                 }
+                else
+                {
+                    frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario, "Essa nao foi sua mellhor batalha, porem foi um bom trabalho", pontuacao);
+                    fimJogo.Show();
+                }
+
+               
+                this.Close();
 
             }
             atualizarTela();            
@@ -298,7 +310,7 @@ namespace ProjetoMarcia
            
             if (vida == 0)
             {
-                frmFimDeJogo fimJogo = new frmFimDeJogo();
+                frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario," Ah que pena, voce perdeu. Mas não desista...", pontuacao);
                 fimJogo.Show();
                 this.Close();
             }            
@@ -353,10 +365,35 @@ namespace ProjetoMarcia
         }
 
         public void inserePontuacao()
-        { }
+        {
+            try
+            {
+                if (con == null)
+                {
+                    con = new SqlConnection();
+                    cs = cs.Substring(cs.IndexOf("Data Source"));
+                    con.ConnectionString = cs;
+                }
+                // cria comando de consulta ao SQL 
+
+                string cmd_s = "update Usuario set maiorPontuacao=@pontuacao where nomeUsuario =@nUsu";
+                SqlCommand cmd = new SqlCommand(cmd_s, con);
+                cmd.Parameters.AddWithValue("@nUsu", usuario);
+                cmd.Parameters.AddWithValue("@pontuacao", pontuacao);
 
 
-
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (System.Data.SqlClient.SqlException ex)
+            {
+                string str;
+                str = "Source:" + ex.Source;
+                str += "\n" + "Message:" + ex.Message;
+                MessageBox.Show(str, "Database Exception");
+            }
+        }
     }
 
 }

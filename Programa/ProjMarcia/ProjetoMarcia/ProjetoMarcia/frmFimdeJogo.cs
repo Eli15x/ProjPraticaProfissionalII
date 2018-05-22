@@ -12,14 +12,19 @@ namespace ProjetoMarcia
 {
     public partial class frmFimDeJogo : Form
     {
-        public frmFimDeJogo()
+        private static String usuario;
+
+        public frmFimDeJogo(String usu,String msg, int pontuacao)
         {
             InitializeComponent();
+            usuario = usu;
+            lblMsg.Text = msg;
+            lblPontuacao.Text = pontuacao.ToString();
         }
 
         private void btnReiniciar_Click(object sender, EventArgs e)
         {
-            frmFase1 fase1 = new frmFase1();
+            frmFase1 fase1 = new frmFase1(usuario);
             fase1.Show();
             this.Close();
 
@@ -34,7 +39,7 @@ namespace ProjetoMarcia
 
         private void btnFase_Click(object sender, EventArgs e)
         {
-            frmJogo fFases= new frmJogo();
+            frmJogo fFases= new frmJogo(usuario);
             fFases.Show();
             this.Close();
         }
