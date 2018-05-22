@@ -310,6 +310,8 @@ namespace ProjetoMarcia
            
             if (vida == 0)
             {
+                //pontuacao = 0; ainda estou pensand se quando o usuario morrer
+                //sua pontucao sera zerada 
                 frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario," Ah que pena, voce perdeu. Mas não desista...", pontuacao);
                 fimJogo.Show();
                 this.Close();
