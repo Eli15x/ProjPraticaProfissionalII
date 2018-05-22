@@ -378,7 +378,7 @@ namespace ProjetoMarcia
 
                 string cmd_s = "update Usuario set maiorPontuacao=@pontuacao where nomeUsuario =@nUsu";
                 SqlCommand cmd = new SqlCommand(cmd_s, con);
-                cmd.Parameters.AddWithValue("@nUsu", usuario);
+                cmd.Parameters.AddWithValue("@nUsu", nomeUsuario);
                 cmd.Parameters.AddWithValue("@pontuacao", pontuacao);
 
 
