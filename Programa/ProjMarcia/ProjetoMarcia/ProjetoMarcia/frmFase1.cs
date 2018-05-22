@@ -16,7 +16,8 @@ namespace ProjetoMarcia
         Bitmap vilao1  = new Bitmap(@"vilao1.png");
         Bitmap coracao = new Bitmap(@"coracao.png");
         Bitmap usuario = new Bitmap(@"UsuarioAzul.png");
-        
+        private static String nomeUsuario;
+
 
 
 
@@ -29,9 +30,10 @@ namespace ProjetoMarcia
         string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
         SqlConnection con = null;
 
-        public frmFase1()
+        public frmFase1(String nUsu)
         {
             InitializeComponent();
+            nomeUsuario = nUsu;
         }
 
         private void frmFase1_Load(object sender, EventArgs e)
@@ -56,32 +58,9 @@ namespace ProjetoMarcia
                     con.ConnectionString = cs;
                 }
 
-                // cria comando de consulta ao SQL da pergunta
-                string cmd_s = "select * from Pergunta where dificultade between 1 and 2";
-                SqlCommand cmd = new SqlCommand(cmd_s, con);
-
-                con.Open();
-
-                SqlDataAdapter adapt = new SqlDataAdapter(cmd);
-                DataSet ds = new DataSet();
-
-                adapt.Fill(ds);
-                con.Close();
-
-
-                Random rd = new Random();
-                int i = rd.Next(20);
-
-                if (ds.Tables[0].Rows.Count >= 1)
-                {
-                    DataRow dr = ds.Tables[0].Rows[i];
-
-                    lblPergunta.Text = dr.ItemArray[1].ToString();
-
-                    //Pegar as respostas
-                    String codPergunta = dr.ItemArray[0].ToString();
-                    passaRespostas(codPergunta);
-                }
+                //ja chama o pegar respostas
+                pegarPerguntas();
+                
             }
 
             catch (Exception ex)
@@ -95,9 +74,54 @@ namespace ProjetoMarcia
         }
 
 
+        private void pegarPerguntas()
+        {//esse metod ja chama o pegar respostas
 
-        private void passaRespostas(String codP)
+            if (con == null)
+            {
+                con = new SqlConnection();
+                cs = cs.Substring(cs.IndexOf("Data Source"));
+                con.ConnectionString = cs;
+            }
+
+            // cria comando de consulta ao SQL da pergunta
+            string cmd_s = "select * from Pergunta where dificultade between 1 and 2";
+            SqlCommand cmd = new SqlCommand(cmd_s, con);
+
+            con.Open();
+
+            SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+
+            adapt.Fill(ds);
+            con.Close();
+
+
+            Random rd = new Random();
+            int i = rd.Next(20);
+
+            if (ds.Tables[0].Rows.Count >= 1)
+            {
+                DataRow dr = ds.Tables[0].Rows[i];
+
+                lblPergunta.Text = dr.ItemArray[1].ToString();
+
+                //Pegar as respostas
+                String codPergunta = dr.ItemArray[0].ToString();
+                pegarRespostas(codPergunta);
+            }
+        }
+
+        private void pegarRespostas(String codP)
         {
+
+            if (con == null)
+            {
+                con = new SqlConnection();
+                cs = cs.Substring(cs.IndexOf("Data Source"));
+                con.ConnectionString = cs;
+            }
+
             // cria comando de consulta ao SQL da resposta
             string cmd_sR = "select resposta from Resposta where codPergunta=@codPergunta";
             SqlCommand cmdR = new SqlCommand(cmd_sR, con);
@@ -251,7 +275,13 @@ namespace ProjetoMarcia
             {
                 //acabou a fase 1
                 pontuacao = pontuacao * vida;
-                //registrar sua pontação no banco
+                //Verificar sua maior pontação no banco e se for
+                //menor do a atual, substituila
+                if (compararPontuacao())
+                {
+                    inserePontuacao();
+                }
+
             }
             atualizarTela();            
             timer = 0;
@@ -273,7 +303,58 @@ namespace ProjetoMarcia
                 this.Close();
             }            
         }
-        
+
+        private Boolean compararPontuacao()
+        {
+            int pontuacaoAnterior =0;
+            try
+            {
+
+                // cria conexao ao banco de dados
+                SqlConnection con = new SqlConnection();
+                cs = cs.Substring(cs.IndexOf("Data Source"));
+                con.ConnectionString = cs;
+
+                // cria comando de consulta ao SQL 
+                string cmd_s = "select maiorPontuacao from Usuario where nomeUsuario=@nomeUsuario";
+
+                SqlCommand cmd = new SqlCommand(cmd_s, con);
+                cmd.Parameters.AddWithValue("@nomeUsuario", nomeUsuario);
+
+                con.Open();
+
+                SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+                adapt.Fill(ds);
+                con.Close();
+
+                if (ds.Tables[0].Rows.Count == 1)
+                {
+                    DataRow dr = ds.Tables[0].Rows[0];
+                    pontuacaoAnterior = Convert.ToInt16(dr.ItemArray[0]);                   
+                }
+
+            }
+            catch (System.Data.SqlClient.SqlException ex)
+            {
+                string str;
+                str = "Source:" + ex.Source;
+                str += "\n" + "Message:" + ex.Message;
+                MessageBox.Show(str, "Database Exception");
+            }
+
+            if (pontuacao > pontuacaoAnterior)
+                return true;
+            else
+                return false;
+            
+
+        }
+
+        public void inserePontuacao()
+        { }
+
 
 
     }

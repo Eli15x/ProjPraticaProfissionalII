@@ -16,6 +16,7 @@ namespace ProjetoMarcia
     {
 
         string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
+        private static String usuario;
 
         public frmLogin()
         {
@@ -29,11 +30,14 @@ namespace ProjetoMarcia
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if ((txtUsuario.Text == "") || (txtSenha.Text == ""))
+            usuario = txtUsuario.Text;
+
+            if ((usuario == "") || (txtSenha.Text == ""))
                 MessageBox.Show("Preencher todos os campos");
 
             else
             {
+                
                 try
                 {
 
@@ -42,17 +46,14 @@ namespace ProjetoMarcia
                     cs = cs.Substring(cs.IndexOf("Data Source"));
                     con.ConnectionString = cs;
 
-
-
-
                     // cria comando de consulta ao SQL 
                     string cmd_s = "declare @ret bit;" +
                     "exec @ret = VerificaUsuario @senha = @sen, @NomeUsuario= @usu;" +
                     "select @ret"; //"exec @ret = VerificaUsuario @senha=@sen,@nomeUsuario=@usu";
 
                     SqlCommand cmd = new SqlCommand(cmd_s, con);
-                   cmd.Parameters.AddWithValue("@sen", txtSenha.Text);
-                   cmd.Parameters.AddWithValue("@usu", txtUsuario.Text);
+                    cmd.Parameters.AddWithValue("@sen", txtSenha.Text);
+                    cmd.Parameters.AddWithValue("@usu", usuario);
 
                     con.Open();
 
@@ -69,8 +70,8 @@ namespace ProjetoMarcia
                         int ret = Convert.ToInt16(dr.ItemArray[0]);
 
                         if (ret == 1)
-                        {
-                            frmJogo Jogo = new frmJogo();
+                        {                            
+                            frmJogo Jogo = new frmJogo(usuario);
                             Jogo.Show();
                             this.Hide();
                         }
@@ -79,6 +80,7 @@ namespace ProjetoMarcia
                             MessageBox.Show("Usuario e senha não condizem");
                         }
                     }
+
 
 
 
@@ -95,6 +97,8 @@ namespace ProjetoMarcia
             }
 
         }
+
+           
 
         private void btnCadastro_Click(object sender, EventArgs e)
         {

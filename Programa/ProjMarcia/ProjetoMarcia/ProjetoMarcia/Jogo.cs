@@ -12,10 +12,12 @@ namespace ProjetoMarcia
 {
     public partial class frmJogo : Form
     {
-       // private int imagensInicio;
+        private static String usuario;
+
+        // private int imagensInicio;
         //private int CodTime;
-       // private String Nome;
-        public frmJogo()
+        // private String Nome;
+        public frmJogo(String usu)
         {
             InitializeComponent();
             picFase1.Visible = false;
@@ -28,6 +30,7 @@ namespace ProjetoMarcia
             // tmrInstrucoes.Tick += new EventHandler(tmrInstrucoes_Tick);
             // imagensInicio = 1;
 
+            usuario = usu;
         }
 
         private void frmJogo_Load(object sender, EventArgs e)
@@ -65,7 +68,7 @@ namespace ProjetoMarcia
 
         private void picFase1_Click(object sender, EventArgs e)
         {
-            frmFase1 fase1 = new frmFase1();
+            frmFase1 fase1 = new frmFase1(usuario);
             fase1.Show();
             this.Close();
         }

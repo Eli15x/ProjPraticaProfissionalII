@@ -84,7 +84,7 @@
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnLogin.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(550, 387);
+            this.btnLogin.Location = new System.Drawing.Point(556, 387);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(222, 78);
             this.btnLogin.TabIndex = 4;
