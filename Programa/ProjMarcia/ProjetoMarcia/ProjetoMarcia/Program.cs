@@ -19,7 +19,7 @@ namespace ProjetoMarcia
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmInicio());
             //Application.Run(new frmJogo());
-            //Application.Run(new frmFase1());
+            //Application.Run(new frmFase1("Usuario"));
         }
     }
 }

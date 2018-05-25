@@ -40,9 +40,10 @@ namespace ProjetoMarcia
         {
             //pictureBox2.BackColor = Color.Transparent;
             //pictureBox2.BringToFront();
-            pictureBox1.Invalidate();
+            pbCenario.Invalidate();
 
-            atualizarTela();
+            //atualizarTela();
+            
         }
 
         private void atualizarTela()
@@ -68,7 +69,7 @@ namespace ProjetoMarcia
                 MessageBox.Show(ex.Message);
             }
 
-            pictureBox1.Invalidate();
+            pbCenario.Invalidate();
             
 
         }
@@ -270,6 +271,7 @@ namespace ProjetoMarcia
             if(mortos==5)
             {
                 MessageBox.Show("Voce acabou com a primeira onda, continue assim");
+                pbCenario.Image = new Bitmap(@"fase1-2.jpg");
             }
             if(mortos ==10)
             {

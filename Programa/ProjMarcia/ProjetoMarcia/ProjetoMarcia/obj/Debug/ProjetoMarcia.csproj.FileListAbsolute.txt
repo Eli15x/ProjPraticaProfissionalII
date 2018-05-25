@@ -185,3 +185,18 @@ C:\Users\u17172\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia
 C:\Users\u17172\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.GameOver.resources
 C:\Users\u17172\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmGameOver.resources
 C:\Users\u17172\Desktop\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmFimDeJogo.resources
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe.config
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.exe
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\bin\Debug\ProjetoMarcia.pdb
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csprojResolveAssemblyReference.cache
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmCadastro.resources
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.FrmInicio.resources
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmFase1.resources
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmFimDeJogo.resources
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmJogo.resources
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmLogin.resources
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.Properties.Resources.resources
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.GenerateResource.cache
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.CoreCompileInputs.cache
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.exe
+C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.pdb
