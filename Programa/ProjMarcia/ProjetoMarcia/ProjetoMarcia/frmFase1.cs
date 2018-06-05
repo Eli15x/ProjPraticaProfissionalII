@@ -11,38 +11,41 @@ using System.Windows.Forms;
 
 namespace ProjetoMarcia
 {
-    public partial class frmFase1 : Form
+    public partial class frmFase1e2 : Form
     {
-        Bitmap vilao1  = new Bitmap(@"vilao1.png");
+        Bitmap vilao;
         Bitmap coracao = new Bitmap(@"coracao.png");
         Bitmap usuario = new Bitmap(@"UsuarioAzul.png");
         private static String nomeUsuario;
 
 
 
-
-        int timer     = 0;
-        int vida      = 3;
+        int vida;
+        int timer     = 0;       
         int mortos    = 0;
         int pontuacao = 0;
+        int qualFase;
 
 
         string cs = Properties.Settings.Default.BDPRII17171ConnectionString;
         SqlConnection con = null;
 
-        public frmFase1(String nUsu)
+        public frmFase1e2(String nUsu, int qF)
         {
             InitializeComponent();
             nomeUsuario = nUsu;
+            qualFase = qF;
         }
 
         private void frmFase1_Load(object sender, EventArgs e)
         {
-            //pictureBox2.BackColor = Color.Transparent;
-            //pictureBox2.BringToFront();
+            if (qualFase == 1)
+                vilao= new Bitmap(@"vilao1.png");                
+            else//qualFase==2
+                vilao = new Bitmap(@"vilao3.png");
+         
             pbCenario.Invalidate();
-
-            //atualizarTela();
+            atualizarTela();
             
         }
 
@@ -86,8 +89,20 @@ namespace ProjetoMarcia
             }
 
             // cria comando de consulta ao SQL da pergunta
-            string cmd_s = "select * from Pergunta where dificultade between 1 and 2";
+            
+            string cmd_s = "select * from Pergunta where dificultade between @inicio and @fim";    
             SqlCommand cmd = new SqlCommand(cmd_s, con);
+
+            if (qualFase == 1)
+            {
+                cmd.Parameters.AddWithValue("@inicio", 1);
+                cmd.Parameters.AddWithValue("@fim", 2);
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@inicio", 2);
+                cmd.Parameters.AddWithValue("@fim", 3);
+            }
 
             con.Open();
 
@@ -164,19 +179,19 @@ namespace ProjetoMarcia
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             if (!(mortos % 6 >= 1) || (mortos % 5 == 0))
-                e.Graphics.DrawImage(vilao1, 0, 0, 100, 100);
+                e.Graphics.DrawImage(vilao, 0, 0, 100, 100);
 
             if (!(mortos % 6 >= 2) || (mortos % 5 == 0))
-                e.Graphics.DrawImage(vilao1, 65, 50, 100, 100);
+                e.Graphics.DrawImage(vilao, 65, 50, 100, 100);
 
             if (!(mortos % 6 >= 3) || (mortos % 5 == 0))
-                e.Graphics.DrawImage(vilao1, 120, 100, 100, 100);
+                e.Graphics.DrawImage(vilao, 120, 100, 100, 100);
 
             if (!(mortos % 6 >= 4) || (mortos % 5 == 0))
-                e.Graphics.DrawImage(vilao1, 65, 150, 100, 100);
+                e.Graphics.DrawImage(vilao, 65, 150, 100, 100);
 
             if (!(mortos % 6 >= 5) || (mortos % 5 == 0))
-                e.Graphics.DrawImage(vilao1, 0, 200, 100, 100);
+                e.Graphics.DrawImage(vilao, 0, 200, 100, 100);
             
             e.Graphics.DrawImage(usuario, 700, 100, 100, 100);
 
@@ -193,13 +208,11 @@ namespace ProjetoMarcia
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             timer++;
-
-            if(timer==20)
-            {
-                errou();
-            }
+             
+            if (timer == 20)
+                errou();        
+            
         }
         private Boolean VerficaResposta(String resposta, String pergunta)
         {

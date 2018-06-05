@@ -73,6 +73,12 @@
     <Compile Include="frmFase1.Designer.cs">
       <DependentUpon>frmFase1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFase2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFase2.Designer.cs">
+      <DependentUpon>frmFase2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFimdeJogo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFase1.resx">
       <DependentUpon>frmFase1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFase2.resx">
+      <DependentUpon>frmFase2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFimdeJogo.resx">
       <DependentUpon>frmFimdeJogo.cs</DependentUpon>

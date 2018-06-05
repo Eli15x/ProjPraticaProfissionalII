@@ -1,6 +1,6 @@
 ﻿namespace ProjetoMarcia
 {
-    partial class frmFase1
+    partial class frmFase1e2
     {
         /// <summary>
         /// Required designer variable.
@@ -120,7 +120,7 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // frmFase1
+            // frmFase1e2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,8 +133,8 @@
             this.Controls.Add(this.btnRes3);
             this.Controls.Add(this.btnRes1);
             this.Controls.Add(this.pbCenario);
-            this.Name = "frmFase1";
-            this.Text = "frmFase1";
+            this.Name = "frmFase1e2";
+            this.Text = "Fase 1";
             this.Load += new System.EventHandler(this.frmFase1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmFase1_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pbCenario)).EndInit();

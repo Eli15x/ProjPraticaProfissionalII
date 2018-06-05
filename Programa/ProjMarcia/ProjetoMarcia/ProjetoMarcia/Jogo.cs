@@ -68,7 +68,7 @@ namespace ProjetoMarcia
 
         private void picFase1_Click(object sender, EventArgs e)
         {
-            frmFase1 fase1 = new frmFase1(usuario);
+            frmFase1e2 fase1 = new frmFase1e2(usuario, 1);
             fase1.Show();
             this.Close();
         }
