@@ -20,10 +20,11 @@ namespace ProjetoMarcia
 
 
 
-        int vida;
+        int vida = 3;
         int timer     = 0;       
         int mortos    = 0;
         int pontuacao = 0;
+        int dificultade;
         int qualFase;
 
 
@@ -44,16 +45,19 @@ namespace ProjetoMarcia
                 vilao = new Bitmap(@"vilao1.png");
                 pbCenario.Image = new Bitmap(@"fase1-1.jpg");
                 this.Text = "Fase 1";
+                dificultade = 1;
             }
             else//qualFase==2
             {
                 vilao = new Bitmap(@"vilao3.png");
                 pbCenario.Image = new Bitmap(@"fase2-2.jpg");
                 this.Text = "Fase 2";
+                dificultade = 2;
             }
-         
-            pbCenario.Invalidate();
+
             atualizarTela();
+            pbCenario.Invalidate();
+            
             
         }
 
@@ -98,19 +102,10 @@ namespace ProjetoMarcia
 
             // cria comando de consulta ao SQL da pergunta
             
-            string cmd_s = "select * from Pergunta where dificultade between @inicio and @fim";    
+            string cmd_s = "select * from Pergunta where dificultade = @dificultade";    
             SqlCommand cmd = new SqlCommand(cmd_s, con);
+            cmd.Parameters.AddWithValue("@dificultade", dificultade);
 
-            if (qualFase == 1)
-            {
-                cmd.Parameters.AddWithValue("@inicio", 1);
-                cmd.Parameters.AddWithValue("@fim", 2);
-            }
-            else
-            {
-                cmd.Parameters.AddWithValue("@inicio", 2);
-                cmd.Parameters.AddWithValue("@fim", 3);
-            }
 
             con.Open();
 
@@ -294,15 +289,18 @@ namespace ProjetoMarcia
                 MessageBox.Show("Voce acabou com a primeira onda, continue assim");
                 if (qualFase == 1)
                 {
-                    pbCenario.Image = new Bitmap(@"fase1-2.jpg");
                     vilao = new Bitmap(@"vilao2.png");
+                    dificultade = 2;
                 }
                 else
                 {
-                    pbCenario.Image = new Bitmap(@"fase2-2.jpg");
                     vilao = new Bitmap(@"vilao4.png");
+                    dificultade = 3;
                 }
-                }
+
+                atualizarTela();
+            }
+
             if(mortos ==10)
             {
                 //acabou a fase 1
