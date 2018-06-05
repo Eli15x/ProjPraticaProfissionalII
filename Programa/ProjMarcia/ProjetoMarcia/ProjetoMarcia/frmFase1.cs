@@ -117,7 +117,7 @@ namespace ProjetoMarcia
 
 
             Random rd = new Random();
-            int i = rd.Next(20);
+            int i = rd.Next(10);
 
             if (ds.Tables[0].Rows.Count >= 1)
             {
