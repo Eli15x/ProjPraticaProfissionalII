@@ -42,13 +42,13 @@ namespace ProjetoMarcia
             if (qualFase == 1)
             {
                 vilao = new Bitmap(@"vilao1.png");
-                pbCenario.Image = new Bitmap(@"fase1.png");
+                pbCenario.Image = new Bitmap(@"fase1-1.jpg");
                 this.Text = "Fase 1";
             }
             else//qualFase==2
             {
                 vilao = new Bitmap(@"vilao3.png");
-                pbCenario.Image = new Bitmap(@"fase2.png");
+                pbCenario.Image = new Bitmap(@"fase2-2.jpg");
                 this.Text = "Fase 2";
             }
          
@@ -292,8 +292,17 @@ namespace ProjetoMarcia
             if(mortos==5)
             {
                 MessageBox.Show("Voce acabou com a primeira onda, continue assim");
-                pbCenario.Image = new Bitmap(@"fase1-2.jpg");
-            }
+                if (qualFase == 1)
+                {
+                    pbCenario.Image = new Bitmap(@"fase1-2.jpg");
+                    vilao = new Bitmap(@"vilao2.png");
+                }
+                else
+                {
+                    pbCenario.Image = new Bitmap(@"fase2-2.jpg");
+                    vilao = new Bitmap(@"vilao4.png");
+                }
+                }
             if(mortos ==10)
             {
                 //acabou a fase 1
