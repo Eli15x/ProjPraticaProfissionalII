@@ -200,3 +200,4 @@ C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\
 C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.csproj.CoreCompileInputs.cache
 C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.exe
 C:\Users\TEATRO DE TABUAS\Desktop\Nova pasta\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.pdb
+C:\Users\u17172\Desktop\ProjPraticaProfissionalII\Programa\ProjMarcia\ProjetoMarcia\ProjetoMarcia\obj\Debug\ProjetoMarcia.frmFase1e2.resources

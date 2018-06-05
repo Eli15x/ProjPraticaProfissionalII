@@ -40,9 +40,17 @@ namespace ProjetoMarcia
         private void frmFase1_Load(object sender, EventArgs e)
         {
             if (qualFase == 1)
-                vilao= new Bitmap(@"vilao1.png");                
+            {
+                vilao = new Bitmap(@"vilao1.png");
+                pbCenario.Image = new Bitmap(@"fase1.png");
+                this.Text = "Fase 1";
+            }
             else//qualFase==2
+            {
                 vilao = new Bitmap(@"vilao3.png");
+                pbCenario.Image = new Bitmap(@"fase2.png");
+                this.Text = "Fase 2";
+            }
          
             pbCenario.Invalidate();
             atualizarTela();
@@ -297,12 +305,12 @@ namespace ProjetoMarcia
                 if (compararPontuacao())
                 {
                     inserePontuacao();
-                    frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario, "Novo Recorde", pontuacao);
+                    frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario, "Novo Recorde", pontuacao, qualFase);
                     fimJogo.Show();
                 }
                 else
                 {
-                    frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario, "Essa nao foi sua mellhor batalha, porem foi um bom trabalho", pontuacao);
+                    frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario, "Essa nao foi sua mellhor batalha, porem foi um bom trabalho", pontuacao,qualFase);
                     fimJogo.Show();
                 }
 
@@ -327,7 +335,7 @@ namespace ProjetoMarcia
             {
                 //pontuacao = 0; ainda estou pensand se quando o usuario morrer
                 //sua pontucao sera zerada 
-                frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario," Ah que pena, voce perdeu. Mas não desista...", pontuacao);
+                frmFimDeJogo fimJogo = new frmFimDeJogo(nomeUsuario," Ah que pena, voce perdeu. Mas não desista...", pontuacao,qualFase);
                 fimJogo.Show();
                 this.Close();
             }            

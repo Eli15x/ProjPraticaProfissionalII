@@ -14,17 +14,20 @@ namespace ProjetoMarcia
     {
         private static String usuario;
 
-        public frmFimDeJogo(String usu,String msg, int pontuacao)
+        int qualFase;
+
+        public frmFimDeJogo(String usu,String msg, int pontuacao, int qF)
         {
             InitializeComponent();
             usuario = usu;
             lblMsg.Text = msg;
             lblPontuacao.Text = pontuacao.ToString();
+            qualFase = qF;
         }
 
         private void btnReiniciar_Click(object sender, EventArgs e)
         {
-            frmFase1e2 fase1 = new frmFase1e2(usuario);
+            frmFase1e2 fase1 = new frmFase1e2(usuario, qualFase);
             fase1.Show();
             this.Close();
 
