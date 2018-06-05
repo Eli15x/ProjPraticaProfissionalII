@@ -45,9 +45,9 @@
             // 
             this.pbCenario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbCenario.Image = global::ProjetoMarcia.Properties.Resources.fase11;
-            this.pbCenario.Location = new System.Drawing.Point(45, 11);
+            this.pbCenario.Location = new System.Drawing.Point(45, 12);
             this.pbCenario.Name = "pbCenario";
-            this.pbCenario.Size = new System.Drawing.Size(834, 312);
+            this.pbCenario.Size = new System.Drawing.Size(888, 339);
             this.pbCenario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbCenario.TabIndex = 0;
             this.pbCenario.TabStop = false;
@@ -56,7 +56,7 @@
             // btnRes1
             // 
             this.btnRes1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRes1.Location = new System.Drawing.Point(71, 350);
+            this.btnRes1.Location = new System.Drawing.Point(45, 432);
             this.btnRes1.Name = "btnRes1";
             this.btnRes1.Size = new System.Drawing.Size(305, 58);
             this.btnRes1.TabIndex = 1;
@@ -67,7 +67,7 @@
             // btnRes3
             // 
             this.btnRes3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRes3.Location = new System.Drawing.Point(71, 442);
+            this.btnRes3.Location = new System.Drawing.Point(45, 515);
             this.btnRes3.Name = "btnRes3";
             this.btnRes3.Size = new System.Drawing.Size(305, 58);
             this.btnRes3.TabIndex = 2;
@@ -78,7 +78,7 @@
             // btnRes2
             // 
             this.btnRes2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRes2.Location = new System.Drawing.Point(529, 350);
+            this.btnRes2.Location = new System.Drawing.Point(628, 432);
             this.btnRes2.Name = "btnRes2";
             this.btnRes2.Size = new System.Drawing.Size(305, 58);
             this.btnRes2.TabIndex = 3;
@@ -89,7 +89,7 @@
             // btnRes4
             // 
             this.btnRes4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRes4.Location = new System.Drawing.Point(529, 442);
+            this.btnRes4.Location = new System.Drawing.Point(628, 515);
             this.btnRes4.Name = "btnRes4";
             this.btnRes4.Size = new System.Drawing.Size(305, 58);
             this.btnRes4.TabIndex = 4;
@@ -100,9 +100,11 @@
             // lblPergunta
             // 
             this.lblPergunta.AutoSize = true;
-            this.lblPergunta.Location = new System.Drawing.Point(376, 279);
+            this.lblPergunta.BackColor = System.Drawing.Color.Transparent;
+            this.lblPergunta.Font = new System.Drawing.Font("Showcard Gothic", 18F);
+            this.lblPergunta.Location = new System.Drawing.Point(40, 377);
             this.lblPergunta.Name = "lblPergunta";
-            this.lblPergunta.Size = new System.Drawing.Size(35, 13);
+            this.lblPergunta.Size = new System.Drawing.Size(93, 30);
             this.lblPergunta.TabIndex = 5;
             this.lblPergunta.Text = "label1";
             // 
@@ -125,7 +127,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjetoMarcia.Properties.Resources.fundoObscuro1;
-            this.ClientSize = new System.Drawing.Size(914, 512);
+            this.ClientSize = new System.Drawing.Size(997, 585);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblPergunta);
             this.Controls.Add(this.btnRes4);
