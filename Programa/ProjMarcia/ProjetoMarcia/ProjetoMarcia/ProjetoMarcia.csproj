@@ -219,5 +219,8 @@
   <ItemGroup>
     <None Include="Resources\numero21.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\computadorInicio%28fases%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

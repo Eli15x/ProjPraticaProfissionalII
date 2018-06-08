@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="numero2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numero21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fase11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fase1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,8 +142,8 @@
   <data name="Vilao11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vilao1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coracao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\coracao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="computador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="game4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,19 +169,19 @@
   <data name="Vilao13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vilao12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="computador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\computador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coracao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\coracao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vilao12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Vilao11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="numero1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\numero11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="numero2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\numero21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Vilao12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vilao11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computadorInicio(fases)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\computadorInicio(fases).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

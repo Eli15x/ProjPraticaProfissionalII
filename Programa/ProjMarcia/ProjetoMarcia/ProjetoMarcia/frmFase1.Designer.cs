@@ -44,7 +44,6 @@
             // pbCenario
             // 
             this.pbCenario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbCenario.Image = global::ProjetoMarcia.Properties.Resources.fase11;
             this.pbCenario.Location = new System.Drawing.Point(45, 12);
             this.pbCenario.Name = "pbCenario";
             this.pbCenario.Size = new System.Drawing.Size(888, 339);

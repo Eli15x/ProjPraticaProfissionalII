@@ -70,7 +70,7 @@
             // picImagem
             // 
             this.picImagem.BackColor = System.Drawing.Color.Transparent;
-            this.picImagem.BackgroundImage = global::ProjetoMarcia.Properties.Resources.computador;
+            this.picImagem.BackgroundImage = global::ProjetoMarcia.Properties.Resources.computadorInicio_fases_;
             this.picImagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picImagem.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.picImagem.Location = new System.Drawing.Point(-35, -54);
@@ -105,7 +105,7 @@
             // 
             this.btnProximo.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnProximo.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProximo.Location = new System.Drawing.Point(380, 407);
+            this.btnProximo.Location = new System.Drawing.Point(356, 365);
             this.btnProximo.Name = "btnProximo";
             this.btnProximo.Size = new System.Drawing.Size(162, 51);
             this.btnProximo.TabIndex = 10;
@@ -118,9 +118,9 @@
             this.picFase1.BackgroundImage = global::ProjetoMarcia.Properties.Resources.numero1;
             this.picFase1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picFase1.Image = global::ProjetoMarcia.Properties.Resources.numero1;
-            this.picFase1.Location = new System.Drawing.Point(358, 262);
+            this.picFase1.Location = new System.Drawing.Point(335, 255);
             this.picFase1.Name = "picFase1";
-            this.picFase1.Size = new System.Drawing.Size(77, 50);
+            this.picFase1.Size = new System.Drawing.Size(71, 50);
             this.picFase1.TabIndex = 11;
             this.picFase1.TabStop = false;
             this.picFase1.Click += new System.EventHandler(this.picFase1_Click);
@@ -129,9 +129,9 @@
             // 
             this.picFase2.BackgroundImage = global::ProjetoMarcia.Properties.Resources.numero2;
             this.picFase2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picFase2.Location = new System.Drawing.Point(520, 262);
+            this.picFase2.Location = new System.Drawing.Point(488, 255);
             this.picFase2.Name = "picFase2";
-            this.picFase2.Size = new System.Drawing.Size(53, 50);
+            this.picFase2.Size = new System.Drawing.Size(63, 50);
             this.picFase2.TabIndex = 12;
             this.picFase2.TabStop = false;
             this.picFase2.Click += new System.EventHandler(this.picFase2_Click);

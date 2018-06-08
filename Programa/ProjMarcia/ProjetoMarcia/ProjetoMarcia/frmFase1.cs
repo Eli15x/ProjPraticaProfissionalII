@@ -43,14 +43,14 @@ namespace ProjetoMarcia
             if (qualFase == 1)
             {
                 vilao = new Bitmap(@"vilao1.png");
-                pbCenario.Image = new Bitmap(@"fase1-1.jpg");
+                pbCenario.Image = new Bitmap(@"fase1.png");
                 this.Text = "Fase 1";
                 dificultade = 1;
             }
             else//qualFase==2
             {
                 vilao = new Bitmap(@"vilao3.png");
-                pbCenario.Image = new Bitmap(@"fase2-2.jpg");
+                pbCenario.Image = new Bitmap(@"fase2.jpg");
                 this.Text = "Fase 2";
                 dificultade = 2;
             }
@@ -182,10 +182,10 @@ namespace ProjetoMarcia
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             if (!(mortos % 6 >= 1) || (mortos % 5 == 0))
-                e.Graphics.DrawImage(vilao, 0, 0, 100, 100);
+                e.Graphics.DrawImage(vilao, 170, 230, 100, 100);
 
             if (!(mortos % 6 >= 2) || (mortos % 5 == 0))
-                e.Graphics.DrawImage(vilao, 65, 50, 100, 100);
+                e.Graphics.DrawImage(vilao, 170, 150, 100, 100);
 
             if (!(mortos % 6 >= 3) || (mortos % 5 == 0))
                 e.Graphics.DrawImage(vilao, 120, 100, 100, 100);
@@ -194,7 +194,7 @@ namespace ProjetoMarcia
                 e.Graphics.DrawImage(vilao, 65, 150, 100, 100);
 
             if (!(mortos % 6 >= 5) || (mortos % 5 == 0))
-                e.Graphics.DrawImage(vilao, 0, 200, 100, 100);
+                e.Graphics.DrawImage(vilao, 0, 240, 100, 100);
             
             e.Graphics.DrawImage(usuario, 700, 100, 100, 100);
 
@@ -282,7 +282,7 @@ namespace ProjetoMarcia
 
         private void acertou()
         {
-            MessageBox.Show("Acertou");
+         
             mortos++;
             if(mortos==5)
             {
